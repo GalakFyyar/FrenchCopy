@@ -1,6 +1,7 @@
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.function.Predicate;
 
 class Parser{
 	//returns true for success, false otherwise
@@ -30,45 +31,42 @@ class Parser{
 			String ifDestination = "";
 			String elseDestination = "";
 			ArrayList<String[]> choices = new ArrayList<>();
-			if(line.startsWith("---")){				//Reached end, stop parsing
-				break;
-			}
 			
-			boolean labelFound = false;
-			//This is the order these commands appear in .ASC files
+			boolean tagConsumed = false;
+			//This is the order these tags appear in .ASC files
 			if(line.startsWith("*ME")){			//Message to the Interviewer Found
 				sc.nextLine();//do nothing
 				line = sc.nextLine();
 			}
 			if(line.startsWith("*LL")){			//Long Label Found
-				labelFound = true;
+				tagConsumed = true;
 				String rawVariable = line;
-				StringBuilder labelBuilder = new StringBuilder(sc.nextLine());
-				while(!labelBuilder.toString().endsWith("]")){		//if multiple lines
+				StringBuilder rawLabel = new StringBuilder(sc.nextLine());
+				line = sc.nextLine();
+				
+				while(!line.startsWith("*SL") && !line.startsWith("*MA") && !line.startsWith("*SK") && !line.startsWith("*CL")){ //Label continues for multiple lines
+					rawLabel.append(line);
 					line = sc.nextLine();
-					
-					if(line.length() < 8)
-						labelBuilder.append(line);
-					else
-						labelBuilder.append("\n").append(line);
 				}
-				String rawLabel = labelBuilder.toString();
-				label = parseLabel(rawLabel);
+				
+				label = parseLabel(rawLabel.toString());
 				variable = parseVariable(rawVariable);
 				codeWidth = parseCodeWidth(rawVariable);
 				
-				line = sc.nextLine();
 			}
 			if(line.startsWith("*SL")){			//Short Label Found
+				tagConsumed = true;
 				String rawShortLabel = sc.nextLine();
 				shortLabel = parseShortLabel(rawShortLabel);
 				line = sc.nextLine();
 			}
 			if(line.startsWith("*MA")){			//Mask Found
+				tagConsumed = true;
 				sc.nextLine();//do nothing
 				line = sc.nextLine();
 			}
 			if(line.startsWith("*SK")){			//Skip Found
+				tagConsumed = true;
 				String skipDestination = sc.nextLine();
 				skipCondition = sc.nextLine();
 				String[] destinations = parseSkipDestination(skipDestination);
@@ -78,17 +76,32 @@ class Parser{
 				line = sc.nextLine();
 			}
 			if(line.startsWith("*CL")){			//Code List Found
-				String rawChoice = sc.nextLine();
+				tagConsumed = true;
+				line = sc.nextLine();
+				ArrayList<String> rawChoices = new ArrayList<>();
 				do{
-					String[] choice = parseChoice(rawChoice, codeWidth);
-					choices.add(choice);
-					rawChoice = sc.nextLine();
-				}while(!rawChoice.startsWith("---"));
+					rawChoices.add(line);
+					line = sc.nextLine();
+				}while(!line.startsWith("---"));
+				
+				if(rawChoices.get(rawChoices.size() - 1).startsWith("*RC"))		//Rotate Choices found, remove
+					rawChoices.remove(rawChoices.size() - 1);
+				
+				for(String rawChoice : rawChoices){
+				    choices.add(parseChoice(rawChoice, codeWidth));
+				}
 				line = sc.nextLine();
 			}
+			if(line.startsWith("*BS")){
+				sc.nextLine();			//?
+			}
+			if(line.startsWith("*LA")){				//Reached beginning of Second Language, stop parsing
+				break;
+			}
 			
-			//If no label was found this indicates that the file is not a properly formatted .ASC file
-			if(!labelFound){
+			
+			//If no tag was consumed this indicates that the file is not a properly formatted .ASC file
+			if(!tagConsumed){
 				sc.close();
 				Controller.throwErrorMessage("Could not parse .ASC file");
 				return false;
@@ -112,13 +125,18 @@ class Parser{
 		return Integer.parseInt(rawVariable.split(" ")[2].substring(2));
 	}
 	
+	/**
+	 * Parses rawLabel to a correctly formatted one.
+	 * This is done by removing the leading and trailing square brackets,
+	 * then replacing tabs with a space,
+	 * then reducing consecutive spaces to one space
+	 * then removing leading and trailing spaces,
+	 * then replacing the weird unicode apostrophes with the ASCII apostrophe
+	 * @param rawLabel the row label to be parsed
+	 * @return the parsed version of the rawLabel
+	 */
 	private static String parseLabel(String rawLabel){
-		//Remove leading and trailing square brackets,
-		//then remove leading and trailing spaces,
-		//then replace tabs with a space,
-		//reduce consecutive spaces to one space
-		//replace weird unicode apostrophe to ASCII apostrophe
-		return rawLabel.substring(1, rawLabel.length() - 1).trim().replace('\t', ' ').replaceAll(" +", " ").replace("\u00B4", "'");
+		return rawLabel.substring(1, rawLabel.length() - 1).replace('\t', ' ').replaceAll(" +", " ").trim().replace("\u00B4", "'");
 	}
 	
 	private static String parseShortLabel(String rawShortLabel){
@@ -143,6 +161,9 @@ class Parser{
 	}
 	
 	private static String[] parseChoice(String rawChoice, int codeWidth){
+		if(rawChoice.startsWith("*RC"))		//Rotate Choice tag found.
+			return null;
+		
 		int choiceLabelEndPos = rawChoice.indexOf(']');
 		String choiceLabel = rawChoice.substring(1, choiceLabelEndPos).replace("\u2019", "'");	//remove surrounding brackets and fix apostrophe
 		

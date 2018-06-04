@@ -5,15 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Controller{
-	private static JFrame frame = new JFrame();
 	private static Map<String, Variable> variableHashMap = new HashMap<>();
 	
-	static{
-		frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-	}
-	
 	static void throwErrorMessage(String err){
-		JOptionPane.showMessageDialog(frame, err, "Error", JOptionPane.ERROR_MESSAGE);
+		JOptionPane.showMessageDialog(null, err, "Error", JOptionPane.ERROR_MESSAGE);
 	}
 	
 	static boolean parseASCFile(File file) {
