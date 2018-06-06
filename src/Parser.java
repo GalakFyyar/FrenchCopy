@@ -1,7 +1,6 @@
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.function.Predicate;
 
 class Parser{
 	//returns true for success, false otherwise
@@ -14,7 +13,7 @@ class Parser{
 			return false;
 		}
 		
-		
+		boolean french = false;
 		int quePosition = 0;
 		sc.nextLine();
 		sc.nextLine();
@@ -30,9 +29,10 @@ class Parser{
 			String skipCondition = "";
 			String ifDestination = "";
 			String elseDestination = "";
-			ArrayList<String[]> choices = new ArrayList<>();
+			ArrayList<String> choices = new ArrayList<>();
 			
 			boolean tagConsumed = false;
+			boolean question = true;
 			//This is the order these tags appear in .ASC files
 			if(line.startsWith("*ME")){			//Message to the Interviewer Found
 				sc.nextLine();//do nothing
@@ -45,7 +45,7 @@ class Parser{
 				line = sc.nextLine();
 				
 				while(!line.startsWith("*SL") && !line.startsWith("*MA") && !line.startsWith("*SK") && !line.startsWith("*CL")){ //Label continues for multiple lines
-					rawLabel.append(line);
+					rawLabel.append('\n').append(line);
 					line = sc.nextLine();
 				}
 				
@@ -92,11 +92,22 @@ class Parser{
 				}
 				line = sc.nextLine();
 			}
-			if(line.startsWith("*BS")){
-				sc.nextLine();			//?
+			if(line.startsWith("*BS")){			//Begin Screen Found
+				tagConsumed = true;
+				question = false;				//this is a non question
+				do{
+					sc.nextLine();                    //do nothing with End Screen tag "*ES"
+					line = sc.nextLine();
+				}while(!line.startsWith("---"));
+				
+				line = sc.nextLine();
 			}
-			if(line.startsWith("*LA")){				//Reached beginning of Second Language, stop parsing
-				break;
+			if(line.startsWith("*LA")){			//Reached beginning of Second Language, switch to french or stop parsing
+				if(french) //does this work?
+					break;
+				
+				french = true;
+				sc.nextLine();					//consume "-----"
 			}
 			
 			
@@ -107,9 +118,10 @@ class Parser{
 				return false;
 			}
 			
-			Controller.addVariable(variable, label, shortLabel, choices);
-			System.out.println(variable);
-			quePosition++;
+			if(question){
+				Controller.addVariable(variable, label, shortLabel, choices);
+				quePosition++;
+			}
 		}
 		
 		sc.close();
@@ -160,10 +172,7 @@ class Parser{
 		return new String[]{ifDestination, elseDestination};
 	}
 	
-	private static String[] parseChoice(String rawChoice, int codeWidth){
-		if(rawChoice.startsWith("*RC"))		//Rotate Choice tag found.
-			return null;
-		
+	private static String parseChoice(String rawChoice, int codeWidth){
 		int choiceLabelEndPos = rawChoice.indexOf(']');
 		String choiceLabel = rawChoice.substring(1, choiceLabelEndPos).replace("\u2019", "'");	//remove surrounding brackets and fix apostrophe
 		
@@ -175,6 +184,6 @@ class Parser{
 		if(skipStartPos != -1)
 			skipToQuestion = rawChoice.substring(skipStartPos + 1, rawChoice.length());
 		
-		return new String[]{code, choiceLabel, skipToQuestion};
+		return choiceLabel;
 	}
 }

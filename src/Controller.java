@@ -12,12 +12,17 @@ class Controller{
 	}
 	
 	static boolean parseASCFile(File file) {
-		return Parser.parse(file);
+		boolean ok = Parser.parse(file);
 		
+		for(Variable v : variableHashMap.values()){
+			System.out.println(v.variableName + " -- " + v.longLabel);
+		}
+		
+		return ok;
 	}
 	
-	static void addVariable(String variable, String label, String shortLabel, ArrayList<String[]> choices){
-	
+	static void addVariable(String variable, String label, String shortLabel, ArrayList<String> choices){
+		variableHashMap.put(variable, new Variable(variable, label, shortLabel, choices));
 	}
 	
 	static class Variable{
@@ -26,7 +31,7 @@ class Controller{
 		String shortLabel;
 		ArrayList<String> choiceLabels;
 		
-		public Variable(String variableName, String longLabel, String shortLabel, ArrayList<String> choiceLabels) {
+		Variable(String variableName, String longLabel, String shortLabel, ArrayList<String> choiceLabels) {
 			this.variableName = variableName;
 			this.longLabel = longLabel;
 			this.shortLabel = shortLabel;
