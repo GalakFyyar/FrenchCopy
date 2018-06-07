@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Parser{
 	//returns true for success, false otherwise
-	static boolean parse(File ascFile){
+	static boolean parseASC(File ascFile){
 		Scanner sc;
 		try{
 			sc = new Scanner(ascFile, "UTF-8");
@@ -14,25 +14,19 @@ class Parser{
 		}
 		
 		boolean french = false;
-		int quePosition = 0;
 		sc.nextLine();
 		sc.nextLine();
 		sc.nextLine();
 		sc.nextLine();
 		sc.nextLine();
 		String line = sc.nextLine();
-		while(true){
+		while(sc.hasNextLine()){
 			String variable = "";
-			int codeWidth = -1;
 			String label = "";
 			String shortLabel = "";
-			String skipCondition = "";
-			String ifDestination = "";
-			String elseDestination = "";
 			ArrayList<String> choices = new ArrayList<>();
 			
 			boolean tagConsumed = false;
-			boolean question = true;
 			//This is the order these tags appear in .ASC files
 			if(line.startsWith("*ME")){			//Message to the Interviewer Found
 				sc.nextLine();//do nothing
@@ -44,14 +38,13 @@ class Parser{
 				StringBuilder rawLabel = new StringBuilder(sc.nextLine());
 				line = sc.nextLine();
 				
-				while(!line.startsWith("*SL") && !line.startsWith("*MA") && !line.startsWith("*SK") && !line.startsWith("*CL")){ //Label continues for multiple lines
+				while(!line.startsWith("*LL") && !line.startsWith("*SL") && !line.startsWith("*MA") && !line.startsWith("*SK") && !line.startsWith("*CL")){ //Label continues for multiple lines
 					rawLabel.append('\n').append(line);
 					line = sc.nextLine();
 				}
 				
 				label = parseLabel(rawLabel.toString());
 				variable = parseVariable(rawVariable);
-				codeWidth = parseCodeWidth(rawVariable);
 				
 			}
 			if(line.startsWith("*SL")){			//Short Label Found
@@ -67,12 +60,8 @@ class Parser{
 			}
 			if(line.startsWith("*SK")){			//Skip Found
 				tagConsumed = true;
-				String skipDestination = sc.nextLine();
-				skipCondition = sc.nextLine();
-				String[] destinations = parseSkipDestination(skipDestination);
-				ifDestination = destinations[0];
-				elseDestination = destinations[1];
-				
+				sc.nextLine();                  //do nothing
+				sc.nextLine();
 				line = sc.nextLine();
 			}
 			if(line.startsWith("*CL")){			//Code List Found
@@ -88,39 +77,42 @@ class Parser{
 					rawChoices.remove(rawChoices.size() - 1);
 				
 				for(String rawChoice : rawChoices){
-				    choices.add(parseChoice(rawChoice, codeWidth));
+				    choices.add(parseChoice(rawChoice));
 				}
 				line = sc.nextLine();
 			}
 			if(line.startsWith("*BS")){			//Begin Screen Found
 				tagConsumed = true;
-				question = false;				//this is a non question
 				do{
 					sc.nextLine();                    //do nothing with End Screen tag "*ES"
 					line = sc.nextLine();
-				}while(!line.startsWith("---"));
+				}while(!line.startsWith("---") && !line.startsWith("*SE"));
 				
 				line = sc.nextLine();
 			}
 			if(line.startsWith("*LA")){			//Reached beginning of Second Language, switch to french or stop parsing
-				if(french) //does this work?
-					break;
+				tagConsumed = true;
 				
 				french = true;
 				sc.nextLine();					//consume "-----"
+				line = sc.nextLine();
+			}
+			if(line.startsWith("*SE") || line.startsWith("*RO") || line.startsWith("*PR") || line.startsWith("*QF")){
+				tagConsumed = true;
+				line = sc.nextLine();
 			}
 			
+			//System.out.println(variable);
 			
 			//If no tag was consumed this indicates that the file is not a properly formatted .ASC file
 			if(!tagConsumed){
 				sc.close();
-				Controller.throwErrorMessage("Could not parse .ASC file");
+				Controller.throwErrorMessage("Could not parseASC .ASC file");
 				return false;
 			}
 			
-			if(question){
-				Controller.addVariable(variable, label, shortLabel, choices);
-				quePosition++;
+			if(!variable.isEmpty()){
+				Controller.addVariable(french, variable, label, shortLabel, choices);
 			}
 		}
 		
@@ -131,10 +123,6 @@ class Parser{
 	
 	private static String parseVariable(String rawVariable){
 		return rawVariable.split(" ")[1];
-	}
-	
-	private static int parseCodeWidth(String rawVariable){
-		return Integer.parseInt(rawVariable.split(" ")[2].substring(2));
 	}
 	
 	/**
@@ -172,12 +160,11 @@ class Parser{
 		return new String[]{ifDestination, elseDestination};
 	}
 	
-	private static String parseChoice(String rawChoice, int codeWidth){
+	private static String parseChoice(String rawChoice){
 		int choiceLabelEndPos = rawChoice.indexOf(']');
 		String choiceLabel = rawChoice.substring(1, choiceLabelEndPos).replace("\u2019", "'");	//remove surrounding brackets and fix apostrophe
 		
 		int codeStartPos = rawChoice.indexOf('[', choiceLabelEndPos) + 1;
-		String code = rawChoice.substring(codeStartPos, codeStartPos + codeWidth);
 		
 		String skipToQuestion = "";
 		int skipStartPos = rawChoice.indexOf('>', codeStartPos);
@@ -185,5 +172,21 @@ class Parser{
 			skipToQuestion = rawChoice.substring(skipStartPos + 1, rawChoice.length());
 		
 		return choiceLabel;
+	}
+	
+	static boolean parseEnter(File enterFile){
+		Scanner sc;
+		try{
+			sc = new Scanner(enterFile, "UTF-8");
+		}catch(Exception e){
+			Controller.throwErrorMessage("Can't open .ASC file\n" + e.getMessage());
+			return false;
+		}
+		
+		while(sc.hasNextLine()){
+			System.out.println(sc.nextLine());
+		}
+		
+		return true;
 	}
 }
