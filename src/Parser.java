@@ -162,31 +162,7 @@ class Parser{
 	
 	private static String parseChoice(String rawChoice){
 		int choiceLabelEndPos = rawChoice.indexOf(']');
-		String choiceLabel = rawChoice.substring(1, choiceLabelEndPos).replace("\u2019", "'");	//remove surrounding brackets and fix apostrophe
 		
-		int codeStartPos = rawChoice.indexOf('[', choiceLabelEndPos) + 1;
-		
-		String skipToQuestion = "";
-		int skipStartPos = rawChoice.indexOf('>', codeStartPos);
-		if(skipStartPos != -1)
-			skipToQuestion = rawChoice.substring(skipStartPos + 1, rawChoice.length());
-		
-		return choiceLabel;
-	}
-	
-	static boolean parseEnter(File enterFile){
-		Scanner sc;
-		try{
-			sc = new Scanner(enterFile, "UTF-8");
-		}catch(Exception e){
-			Controller.throwErrorMessage("Can't open .ASC file\n" + e.getMessage());
-			return false;
-		}
-		
-		while(sc.hasNextLine()){
-			System.out.println(sc.nextLine());
-		}
-		
-		return true;
+		return rawChoice.substring(1, choiceLabelEndPos).replace("\u2019", "'");
 	}
 }

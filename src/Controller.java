@@ -1,3 +1,6 @@
+import com.sun.istack.internal.Nullable;
+import javafx.util.Pair;
+
 import javax.swing.*;
 import java.io.File;
 import java.util.ArrayList;
@@ -12,10 +15,10 @@ class Controller{
 		JOptionPane.showMessageDialog(null, err, "Error", JOptionPane.ERROR_MESSAGE);
 	}
 	
-	static boolean parseASCFile(File file) {
+	static Pair<Map<String, Variable>, Map<String, Variable>> parseASCFile(File file) {
 		boolean ok = Parser.parseASC(file);
 		if(!ok)
-			return false;
+			return null;
 		
 		variableHashMapEN.entrySet().removeIf(v -> v.getValue().longLabel.isEmpty());
 		variableHashMapFR.remove("LANG");
@@ -23,7 +26,7 @@ class Controller{
 		//System.out.println(variableHashMapEN.size());
 		//System.out.println(variableHashMapFR.size());
 		
-		return true;
+		return new Pair<>(variableHashMapEN, variableHashMapFR);
 	}
 	
 	static void addVariable(boolean french, String variableName, String label, String shortLabel, ArrayList<String> choices){
@@ -31,18 +34,5 @@ class Controller{
 			variableHashMapFR.put(variableName, new Variable(variableName, label, shortLabel, choices));
 		else
 			variableHashMapEN.put(variableName, new Variable(variableName, label, shortLabel, choices));
-	}
-	
-	static Map<String, Variable> getVariableHashMapEN() {
-		return variableHashMapEN;
-	}
-	
-	static Map<String, Variable> getVariableHashMapFR() {
-		return variableHashMapFR;
-	}
-	
-	static boolean parseEnterFile(File file){
-		boolean ok = Parser.parseEnter(file);
-		return ok;
 	}
 }
