@@ -99,8 +99,7 @@ R ; null
 R Mean; a(300:301),r(300:301,01:10); fdp 1 freq novp
 
 TABLE 3
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
 T A. The economy
 T &wt Q3A
 Q r(302:303,01:99)
@@ -122,8 +121,7 @@ R ; null
 R Mean; a(302:303),r(302:303,01:10); fdp 1 freq novp
 
 TABLE 4
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
 T B. Creating jobs
 T &wt Q3B
 Q r(304:305,01:99)
@@ -145,8 +143,7 @@ R ; null
 R Mean; a(304:305),r(304:305,01:10); fdp 1 freq novp
 
 TABLE 5
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
 T C. Investing in infrastructure
 T &wt Q3C
 Q r(306:307,01:99)
@@ -168,8 +165,7 @@ R ; null
 R Mean; a(306:307),r(306:307,01:10); fdp 1 freq novp
 
 TABLE 6
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
 T D. Health care
 T &wt Q3D
 Q r(308:309,01:99)
@@ -191,8 +187,7 @@ R ; null
 R Mean; a(308:309),r(308:309,01:10); fdp 1 freq novp
 
 TABLE 7
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
 T E. National security
 T &wt Q3E
 Q r(596:597,01:99)
@@ -214,8 +209,7 @@ R ; null
 R Mean; a(596:597),r(596:597,01:10); fdp 1 freq novp
 
 TABLE 8
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
 T F. Immigration
 T &wt Q3F
 Q r(310:311,01:99)
@@ -237,9 +231,8 @@ R ; null
 R Mean; a(310:311),r(310:311,01:10); fdp 1 freq novp
 
 TABLE 9
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
-T G. Aboriginal issues (Enjeux autochtones)
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
+T G. Aboriginal issues
 T &wt Q3G
 Q r(312:313,01:99)
 R NET: 1-4; r(312:313,01:04)
@@ -260,8 +253,7 @@ R ; null
 R Mean; a(312:313),r(312:313,01:10); fdp 1 freq novp
 
 TABLE 10
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
 T H. The environment
 T &wt Q3H
 Q r(314:315,01:99)
@@ -321,7 +313,7 @@ R E. National security; r(596:597,07:10); vbase - 1
 R null ; r(310:311,01:99); noprint
 R F. Immigration; r(310:311,07:10); vbase - 1
 R null ; r(312:313,01:99); noprint
-R G. Aboriginal issues (Enjeux autochtones); r(312:313,07:10); vbase - 1
+R G. Aboriginal issues; r(312:313,07:10); vbase - 1
 R null ; r(314:315,01:99); noprint
 R H. The environment; r(314:315,07:10); vbase - 1
 R null ; r(590:591,01:99); noprint
@@ -1087,7 +1079,7 @@ R Everything About It//Entire Breakdown//Budget in Detail; r(333:334/335:336/337
 R Please specify :; r(333:334/335:336/337:338,77); nor
 R Other; r(333:334/335:336/337:338,88); nor
 R Don't Know//Refused; r(333:334/335:336/337:338,99); nor
-*
+
 TABLE 54
 T BUD2. Have you seen, read or heard information about the 2017 federal budget through any of the following means: [READ LIST  -  RECORD UP TO 9 MENTIONS]
 T &wt BUD2
@@ -1105,7 +1097,7 @@ R TV news stories; r(339:340/341:342...355:356,09)
 R None of these sources; r(339:340/341:342...355:356,97)
 R DON'T KNOW; r(339:340/341:342...355:356,98); nor
 R REFUSED; r(339:340/341:342...355:356,99); nor
-*
+
 TABLE 55
 T E1. Thinking about the cost of living and your personal financial situation, are you currently:
 T &wt E1
@@ -1115,7 +1107,7 @@ R Just getting by, with no savings; 360-2
 R Getting ahead, with some savings; 360-3
 R Financially secure; 360-4
 R Don't know//Refused; 360-9
-*
+
 TABLE 56
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /A. Reduce your greenhouse gas pollution
@@ -1137,7 +1129,7 @@ R 10  -  Very likely; r(361:362,10)
 R Don't know//Refused; r(361:362,99); nor
 R ; null
 R Mean; a(361:362),r(361:362,01:10); fdp 1 freq novp
-*
+
 TABLE 57
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /B. Make more energy efficient choices when buying appliances
@@ -1159,7 +1151,7 @@ R 10  -  Very likely; r(363:364,10)
 R Don't know//Refused; r(363:364,99); nor
 R ; null
 R Mean; a(363:364),r(363:364,01:10); fdp 1 freq novp
-*
+
 TABLE 58
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /CX. Make healthier choices when buying food 
@@ -1181,8 +1173,6 @@ R 10  -  Very likely; r(365:366,10)
 R Don't know//Refused; r(365:366,99); nor
 R ; null
 R Mean; a(365:366),r(365:366,01:10); fdp 1 freq novp
-*
-
 
 TABLE 59
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
@@ -1205,8 +1195,6 @@ R 10  -  Very likely; r(367:368,10)
 R Don't know//Refused; r(367:368,99); nor
 R ; null
 R Mean; a(367:368),r(367:368,01:10); fdp 1 freq novp
-*
-
 
 TABLE 60
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
@@ -1229,8 +1217,6 @@ R 10  -  Very likely; r(369:370,10)
 R Don't know//Refused; r(369:370,99); nor
 R ; null
 R Mean; a(369:370),r(369:370,01:10); fdp 1 freq novp
-*
-
 
 TABLE 61
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
@@ -1253,7 +1239,6 @@ R 10  -  Very likely; r(371:372,10)
 R Don't know//Refused; r(371:372,99); nor
 R ; null
 R Mean; a(371:372),r(371:372,01:10); fdp 1 freq novp
-
 
 TABLE 62
 T GHG1 Summary of 7 - 10 scores
@@ -1502,10 +1487,8 @@ R No; 403-2
 R Don't know // Refused; 403-9
 
 TABLE 76
-T OATH1. Persons 14 years or older who apply for citizenship must take the Oath of Citizenship to become a Canadian citizen. In order to redress the legacy of residential schools and advance the process of Canadian reconciliation, one of the Truth and Re&
-conciliation Commission recommendations was to change the last sentence of the Oath of Citizenship from ...
-T "I will faithfully observe the laws of Canada, and fulfill my duties as a Canadian citizen" to "I will faithfully observe the laws of Canada including Treaties with Indigenous Peoples, and fulfill my duties as a Canadian citizen". To what extent do you&
- agree or disagree with this change? Please use a scale from 1 to 10 where 1 means you "Strongly disagree" with this change and 10 means you "Strongly agree" with this change.
+T OATH1. Persons 14 years or older who apply for citizenship must take the Oath of Citizenship to become a Canadian citizen. In order to redress the legacy of residential schools and advance the process of Canadian reconciliation, one of the Truth and Reconciliation Commission recommendations was to change the last sentence of the Oath of Citizenship from ...
+T "I will faithfully observe the laws of Canada, and fulfill my duties as a Canadian citizen" to "I will faithfully observe the laws of Canada including Treaties with Indigenous Peoples, and fulfill my duties as a Canadian citizen". To what extent do you agree or disagree with this change? Please use a scale from 1 to 10 where 1 means you "Strongly disagree" with this change and 10 means you "Strongly agree" with this change.
 T &wt OATH1
 Q r(404:405,01:99)
 R NET: 1-4; r(404:405,01:04)
@@ -2761,8 +2744,7 @@ R No; 428-2
 R Refused; 428-9
 
 TABLE 139
-T D13. You may belong to one or more racial or cultural groups on the following list. Are you...? Interviewer: Read categories to respondent and mark up to 4 responses that apply. If respondent answers "mixed", "bi-racial" or "multi-racial", etc., probe &
-for specific groups and mark each one separately (e.g., White, Black, Chinese).
+T D13. You may belong to one or more racial or cultural groups on the following list. Are you...? Interviewer: Read categories to respondent and mark up to 4 responses that apply. If respondent answers "mixed", "bi-racial" or "multi-racial", etc., probe for specific groups and mark each one separately (e.g., White, Black, Chinese).
 T &wt D13
 Q 428-2
 R White; r(429:430/431:432...435:436,01)
@@ -2812,7 +2794,6 @@ X load add char from 'Y:\D113\D113_daily.TXT'
 
 X ex 805
 X ex 901
-*
 
 
 TABLE 805
@@ -2820,7 +2801,6 @@ T weight execute - AgeGender and Region (from daily)
 X set qual (1'D113')
 X cw(f901:915)
 X set qual off
-*
 
 
 TABLE 901
@@ -2830,7 +2810,6 @@ X run 1 thru 140 b1001 PCTS pdp 0 excel(name'PCO Quarter 1 - counts' sheet'&r'in
 X run 1 thru 140 b1001 PCTS pdp 0 excel(name'PCO Quarter 1 - percents' sheet'&r' ini) nofreq nosgtest nottest
 
 
-*
 TABLE 1001
 R Total; all; novp nor space 1 freq
 C Total; all
