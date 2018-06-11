@@ -3,15 +3,15 @@ import javafx.util.Pair;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Main{
 	public static void main(String[] args){
         System.out.println("START");
-	    //String filePath = "G:\\PCO\\D160\\D160.ASC";
-	    //String ascFilePath = "D160.ASC";
 	    String ascFilePath = "D113.ASC";
 	    String enterFilePath = "D113.e";
 	    //String enterFilePath = "D1132.e";
@@ -59,28 +59,74 @@ public class Main{
 			}
 			String sheetName = sheetNameLine.split(" ")[2];
 			
-			ArrayList<String> labels = table.stream().filter(s -> s.startsWith("T ") && !s.startsWith("T &wt")).collect(Collectors.toCollection(ArrayList::new));
-			
-			//System.out.println(labels.size());
-			
-			if(labels.size() == 1) {
-				int indexOfLongLabel = table.indexOf(labels.get(0));
+			//Summary rows
+			if(sheetName.endsWith("_SUMMARY")){
+				ArrayList<String> rows = filter(table, s -> s.startsWith("R ") && !s.startsWith("R null"));
 				
-				Variable var = getVariable(frenchVariables, sheetName);
-				if(var == null){
-					System.err.println("Could not find variable " + sheetName);
+				String variableName = sheetName.substring(0, sheetName.indexOf('_'));
+				for (String row : rows) {
+					String subq = row.substring(2, row.indexOf('.'));
+					String variableNameForSubQ = variableName + subq;
+					
+					Variable var = getVariable(frenchVariables, variableNameForSubQ);
+					if(var == null){
+						System.err.println("Could not find variable " + variableNameForSubQ);
+						continue;
+					}
+					
+					String newRow = row.replace(row.substring(2, row.indexOf(';')), var.shortLabel);
+					int rowIndex = table.indexOf(row);
+					table.set(rowIndex, newRow);
+				}
+				
+				continue;
+			}
+			
+			ArrayList<String> labels = filter(table, s -> s.startsWith("T ") && !s.startsWith("T &wt"));
+			
+			//Set long label
+			Variable var = getVariable(frenchVariables, sheetName);
+			if(var == null){
+				System.err.println("Could not find variable " + sheetName);
+				continue;
+			}
+			
+			int indexOfLongLabel = table.indexOf(labels.get(0));
+			table.set(indexOfLongLabel, var.longLabel);
+			setLongLabel(table, indexOfLongLabel, var.longLabel);
+			
+			//Set short label
+			if(labels.size() == 2){
+				int indexOfShortLabel = table.indexOf(labels.get(1));
+				table.set(indexOfShortLabel, "T " + var.shortLabel);
+			}
+			
+//			if(!(var.codeWidth == 1 || var.codeWidth == 2)){
+//				System.err.println("Bad Code Width in " + var.variableName + " " + var.codeWidth);
+//				continue;
+//			}
+			
+			ArrayList<String> choiceLabels = getChoiceLabels(table);
+			ArrayList<String> frenchChoiceLabels = new ArrayList<>(var.choices.values());
+			ArrayList<String> englishChoiceLabels = new ArrayList<>(englishVariables.get(var.variableName).choices.values());
+			
+			for(String choiceLabel : choiceLabels) {
+				
+				
+				int choiceLabelIndex = englishChoiceLabels.indexOf(choiceLabel);
+				if(choiceLabelIndex == -1){
+					System.err.println("could not find " + choiceLabel + "\t" + var.variableName);
 					continue;
 				}
-				//System.out.println(var.longLabel);
+				String frenchChoiceLabel = frenchChoiceLabels.get(choiceLabelIndex);
 				
-				table.set(indexOfLongLabel, var.longLabel);
-				setLongLabel(table, indexOfLongLabel, var.longLabel);
+				//System.out.println(choiceLabel);
+				String choiceRow = filter(table, s -> s.contains(choiceLabel)).get(0);
+				int choiceRowIndexInTable = table.indexOf(choiceRow);
 				
-			}else if(labels.size() == 2){
-				int indexOfLongLabel = table.indexOf(labels.get(0));
-				int indexOfShortLabel = table.indexOf(labels.get(1));
-				
+				table.set(choiceRowIndexInTable, choiceRow.replace(choiceLabel, frenchChoiceLabel));
 			}
+			
 		}
 		
 		StringBuilder sb = new StringBuilder();
@@ -108,6 +154,10 @@ public class Main{
 			return map.get(newVariableName);
 		}
 		
+		if(variableName.equals("TAX2")){
+			return map.get("QTAX2H");
+		}
+		
 		return null;
 	}
 	
@@ -123,5 +173,35 @@ public class Main{
 			table.add(currentLongLabelIndex, "T " + title);
 			currentLongLabelIndex++;
 		}
+	}
+	
+	private static <T> ArrayList<T> filter(ArrayList<T> a, Predicate<T> p){
+		return a.stream().filter(p).collect(Collectors.toCollection(ArrayList::new));
+	}
+	
+	private static Map<String, String> getRows(ArrayList<String> table, int codeWidth) {
+		ArrayList<String> rawRows = filter(table, s -> s.startsWith("R ") && !s.startsWith("R NET"));
+		Map<String, String> choices = new HashMap<>();
+		
+		rawRows.forEach(row -> {
+			int labelEndIndex = row.indexOf(';');
+			String choiceLabel = row.substring(2, labelEndIndex);
+			String choiceCode;
+			int codeStartIndex;
+			codeStartIndex = codeWidth > 1 ? row.indexOf(',', labelEndIndex) : row.indexOf('-', labelEndIndex);
+			choiceCode = row.substring(codeStartIndex, codeStartIndex + codeWidth);
+			
+			choices.put(choiceCode, choiceLabel);
+		});
+		
+		return choices;
+	}
+	
+	private static ArrayList<String> getChoiceLabels(ArrayList<String> table){
+		ArrayList<String> rawRows = filter(table, s -> s.startsWith("R ") && !s.startsWith("R NET") && !s.startsWith("R Mean"));
+		ArrayList<String> choiceLabels = new ArrayList<>();
+		rawRows.forEach(rr -> choiceLabels.add(rr.substring(2, rr.indexOf(';'))));
+		choiceLabels.removeIf(String::isEmpty);
+		return choiceLabels;
 	}
 }

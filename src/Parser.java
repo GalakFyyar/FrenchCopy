@@ -1,6 +1,5 @@
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 class Parser{
 	//returns true for success, false otherwise
@@ -22,9 +21,10 @@ class Parser{
 		String line = sc.nextLine();
 		while(sc.hasNextLine()){
 			String variable = "";
+			int codeWidth = -1;
 			String label = "";
 			String shortLabel = "";
-			ArrayList<String> choices = new ArrayList<>();
+			Map<String, String> choices = new LinkedHashMap<>();
 			
 			boolean tagConsumed = false;
 			//This is the order these tags appear in .ASC files
@@ -45,7 +45,6 @@ class Parser{
 				
 				label = parseLabel(rawLabel.toString());
 				variable = parseVariable(rawVariable);
-				
 			}
 			if(line.startsWith("*SL")){			//Short Label Found
 				tagConsumed = true;
@@ -77,7 +76,8 @@ class Parser{
 					rawChoices.remove(rawChoices.size() - 1);
 				
 				for(String rawChoice : rawChoices){
-				    choices.add(parseChoice(rawChoice));
+					String[] choice = parseChoice(rawChoice);
+					choices.put(choice[1], choice[0]);
 				}
 				line = sc.nextLine();
 			}
@@ -112,7 +112,7 @@ class Parser{
 			}
 			
 			if(!variable.isEmpty()){
-				Controller.addVariable(french, variable, label, shortLabel, choices);
+				Controller.addVariable(french, variable, label, shortLabel, codeWidth, choices);
 			}
 		}
 		
@@ -129,9 +129,9 @@ class Parser{
 	 * Parses rawLabel to a correctly formatted one.
 	 * This is done by removing the leading and trailing square brackets,
 	 * then replacing tabs with a space,
-	 * then reducing consecutive spaces to one space
+	 * then reducing consecutive spaces to one space,
 	 * then removing leading and trailing spaces,
-	 * then replacing the weird unicode apostrophes with the ASCII apostrophe
+	 * then replacing the weird unicode apostrophes with the ASCII apostrophe.
 	 * @param rawLabel the row label to be parsed
 	 * @return the parsed version of the rawLabel
 	 */
@@ -143,26 +143,13 @@ class Parser{
 		return rawShortLabel.substring(1, rawShortLabel.length() - 1);
 	}
 	
-	private static String[] parseSkipDestination(String skipDestination){
-		String ifDestination;
-		String elseDestination = "";
-		
-		int arrowOffset = 2;		//need because of arrow in .ASC files "->"
-		int elseOffset = 6;			//need because of else text in .ASC files " ELSE "
-		int elseSkipStartPos = skipDestination.indexOf(' ');
-		if(elseSkipStartPos != -1){
-			elseDestination = skipDestination.substring(elseSkipStartPos + elseOffset);
-			ifDestination = skipDestination.substring(arrowOffset, elseSkipStartPos);
-		}else{
-			ifDestination = skipDestination.substring(arrowOffset);
-		}
-		
-		return new String[]{ifDestination, elseDestination};
-	}
-	
-	private static String parseChoice(String rawChoice){
+	private static String[] parseChoice(String rawChoice){
 		int choiceLabelEndPos = rawChoice.indexOf(']');
+		String choiceLabel = rawChoice.substring(1, choiceLabelEndPos).replace("\u2013", "-").replace("\u2019", "'").replaceAll("/", "//").replaceAll(" +", " ");
 		
-		return rawChoice.substring(1, choiceLabelEndPos).replace("\u2019", "'");
+		int codeStartPos = rawChoice.indexOf('[', choiceLabelEndPos) + 1;
+		String code = rawChoice.substring(codeStartPos, rawChoice.indexOf(']', codeStartPos));
+		
+		return new String[]{choiceLabel, code};
 	}
 }

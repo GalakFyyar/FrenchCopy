@@ -1,14 +1,28 @@
-import java.util.ArrayList;
+import java.util.Map;
+
 class Variable {
 	String variableName;
 	String longLabel;
 	String shortLabel;
-	ArrayList<String> choiceLabels;
+	int codeWidth;
+	Map<String, String> choices;
 	
-	Variable(String variableName, String longLabel, String shortLabel, ArrayList<String> choiceLabels) {
+	/*
+	String variableName;
+	String longLabelEnglish;
+	String longLabelFrench;
+	String shortLabelEnglish;
+	String shortLabelFrench;
+	int codeWidth;
+	Map<String, String> choicesEnglish;
+	Map<String, String> choicesFrench;
+	 */
+	
+	Variable(String variableName, String longLabel, String shortLabel, int codeWidth, Map<String, String> choices) {
 		this.variableName = variableName;
 		this.longLabel = longLabel;
 		this.shortLabel = shortLabel;
-		this.choiceLabels = choiceLabels;
+		this.codeWidth = codeWidth;
+		this.choices = choices;
 	}
 }
