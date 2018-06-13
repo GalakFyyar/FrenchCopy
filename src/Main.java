@@ -1,5 +1,3 @@
-import javafx.util.Pair;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -17,16 +15,12 @@ public class Main{
 	    //String enterFilePath = "D1132.e";
 		
 		File ascFile = new File(ascFilePath);
-		Pair<Map<String, Variable>, Map<String, Variable>> maps = Controller.parseASCFile(ascFile);
+		Map<String, Variable> variableMap = Controller.parseASCFile(ascFile);
 		
-		if(maps == null){
+		if(variableMap == null){
 			System.out.println("ASC file parse not successful");
 			return;
 		}
-		
-		Map<String, Variable> englishVariables = maps.getKey();
-		Map<String, Variable> frenchVariables = maps.getValue();
-		
 		
 		File enterFile = new File(enterFilePath);
 		Scanner sc;
@@ -51,6 +45,7 @@ public class Main{
 			}
 		}
 		
+		/*
 		for (ArrayList<String> table : buffer) {
 			String sheetNameLine = table.stream().filter(s -> s.startsWith("T &wt")).findAny().orElse(null);
 			if(sheetNameLine == null){
@@ -128,6 +123,7 @@ public class Main{
 			}
 			
 		}
+		*/
 		
 		StringBuilder sb = new StringBuilder();
 		for (ArrayList<String> table : buffer) {

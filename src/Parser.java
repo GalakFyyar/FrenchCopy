@@ -13,6 +13,7 @@ class Parser{
 		}
 		
 		boolean french = false;
+		boolean nextVarFrench = false;
 		sc.nextLine();
 		sc.nextLine();
 		sc.nextLine();
@@ -93,7 +94,7 @@ class Parser{
 			if(line.startsWith("*LA")){			//Reached beginning of Second Language, switch to french or stop parsing
 				tagConsumed = true;
 				
-				french = true;
+				nextVarFrench = true;
 				sc.nextLine();					//consume "-----"
 				line = sc.nextLine();
 			}
@@ -112,7 +113,12 @@ class Parser{
 			}
 			
 			if(!variable.isEmpty()){
-				Controller.addVariable(french, variable, label, shortLabel, codeWidth, choices);
+				Controller.addToMap(french, variable, label, shortLabel, codeWidth, choices);
+			}
+			
+			if(nextVarFrench){
+				nextVarFrench = false;
+				french = true;
 			}
 		}
 		
