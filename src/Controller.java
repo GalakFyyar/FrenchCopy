@@ -23,9 +23,9 @@ class Controller{
 		return variableHashMap;
 	}
 	
-	static void addToMap(boolean french, String variableName, String label, String shortLabel, int codeWidth, Map<String, String> choices){
+	static void addToMap(boolean french, String variableName, int codeWidth, String label, String shortLabel, Map<String, String> choices){
 		if(!french)
-			variableHashMap.put(variableName, new Variable(variableName, label, shortLabel, codeWidth, choices));
+			variableHashMap.put(variableName, new Variable(variableName, codeWidth, label, shortLabel, choices));
 		else{
 			System.out.println(variableName);
 			Variable var = variableHashMap.get(variableName);
