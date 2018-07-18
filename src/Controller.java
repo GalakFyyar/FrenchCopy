@@ -29,7 +29,7 @@ class Controller{
 		else{
 			System.out.println(variableName);
 			Variable var = variableHashMap.get(variableName);
-			var.updateFrench(label, shortLabel, choices);
+			var.setFrench(label, shortLabel, choices);
 		}
 	}
 }
