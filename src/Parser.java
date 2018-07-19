@@ -78,6 +78,7 @@ class Parser{
 				
 				for(String rawChoice : rawChoices){
 					String[] choice = parseChoice(rawChoice);
+					codeWidth = choice[1].length();
 					choices.put(choice[1], choice[0]);
 				}
 				line = sc.nextLine();
@@ -113,7 +114,7 @@ class Parser{
 			}
 			
 			if(!variable.isEmpty()){
-				Controller.addToMap(french, variable, label, shortLabel, codeWidth, choices);
+				Controller.addToMap(french, variable, codeWidth, label, shortLabel, choices);
 			}
 			
 			if(nextVarFrench){

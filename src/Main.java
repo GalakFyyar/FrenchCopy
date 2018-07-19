@@ -18,7 +18,7 @@ public class Main {
 		Map<String, Variable> variableMap = Controller.parseASCFile(ascFile);
 		
 		if (variableMap == null) {
-			System.out.println("ASC file parse not successful");
+			System.err.println("ASC file parse not successful");
 			return;
 		}
 		
@@ -27,7 +27,7 @@ public class Main {
 		try {
 			sc = new Scanner(enterFile);
 		} catch (FileNotFoundException e) {
-			System.out.println("Can't open or read Enter File");
+			System.err.println("Can't open or read Enter File");
 			return;
 		}
 		
@@ -48,7 +48,7 @@ public class Main {
 		for (ArrayList<String> table : buffer) {
 			String sheetNameLine = table.stream().filter(s -> s.startsWith("T &wt")).findAny().orElse(null);
 			if (sheetNameLine == null) {
-				System.out.println("Could not find sheet name in " + table.get(0));
+				System.err.println("Could not find sheet name in " + table.get(0));
 				continue;
 			}
 			String sheetName = sheetNameLine.split(" ")[2];
@@ -77,7 +77,7 @@ public class Main {
 			}
 			
 			ArrayList<String> titles = filter(table, s -> s.startsWith("T "));
-			ArrayList<String> labels = filter(titles, s -> s.startsWith("T &wt"));
+			ArrayList<String> labels = filter(titles, s -> !s.startsWith("T &wt"));
 			
 			//Find relevant variable
 			Variable var = getVariable(variableMap, sheetName);
@@ -87,30 +87,21 @@ public class Main {
 			}
 			
 			//Set long label
-			boolean hasShortLabel = var.shortLabelEnglish.isEmpty();
-			int numOfLongLabelLines = hasShortLabel ? labels.size() : labels.size() - 1;
+			boolean hasShortLabel = !var.shortLabelEnglish.isEmpty();
+			int numOfLongLabelLines = hasShortLabel ? labels.size() - 1 : labels.size();
 			int startIndexOfLongLabel = table.indexOf(labels.get(0));
 			setLongLabel(table, startIndexOfLongLabel, numOfLongLabelLines, var.longLabelFrench);
 			
-			/*
 			//Set short label
-			if (titles.size() == 2) {
-				int indexOfShortLabel = table.indexOf(titles.get(1));
-				table.set(indexOfShortLabel, "T " + var.shortLabel);
+			if (hasShortLabel) {
+				int indexOfShortLabel = table.indexOf(labels.get(labels.size() - 1));       //short label is the last label
+				table.set(indexOfShortLabel, "T " + var.shortLabelFrench);
 			}
-
-//			if(!(var.codeWidth == 1 || var.codeWidth == 2)){
-//				System.err.println("Bad Code Width in " + var.variableName + " " + var.codeWidth);
-//				continue;
-//			}
 			
+			/*
 			ArrayList<String> choiceLabels = getChoiceLabels(table);
-			ArrayList<String> frenchChoiceLabels = new ArrayList<>(var.choices.values());
-			ArrayList<String> englishChoiceLabels = new ArrayList<>(englishVariables.get(var.variableName).choices.values());
 			
 			for (String choiceLabel : choiceLabels) {
-				
-				
 				int choiceLabelIndex = englishChoiceLabels.indexOf(choiceLabel);
 				if (choiceLabelIndex == -1) {
 					System.err.println("could not find " + choiceLabel + "\t" + var.variableName);

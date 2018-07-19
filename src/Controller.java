@@ -18,8 +18,6 @@ class Controller{
 		variableHashMap.entrySet().removeIf(v -> v.getValue().longLabelEnglish.isEmpty());
 		variableHashMap.remove("LANG");
 		
-		System.out.println(variableHashMap.size());
-		
 		return variableHashMap;
 	}
 	
@@ -27,7 +25,6 @@ class Controller{
 		if(!french)
 			variableHashMap.put(variableName, new Variable(variableName, codeWidth, label, shortLabel, choices));
 		else{
-			System.out.println(variableName);
 			Variable var = variableHashMap.get(variableName);
 			var.setFrench(label, shortLabel, choices);
 		}
