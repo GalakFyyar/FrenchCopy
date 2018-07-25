@@ -1,3 +1,6 @@
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -10,8 +13,8 @@ import java.util.stream.Collectors;
 public class Main {
 	public static void main(String[] args) {
 		System.out.println("START");
-		String ascFilePath = "D113.ASC";
-		String enterFilePath = "D113.e";
+		String ascFilePath = "D126.ASC";
+		String enterFilePath = "D126_CUMULATIVE.e";
 		//String enterFilePath = "D1132.e";
 		
 		File ascFile = new File(ascFilePath);
@@ -64,7 +67,7 @@ public class Main {
 					
 					Variable var = getVariable(variableMap, subQuestionVariableName);
 					if (var == null) {
-						System.err.println("Could not find variable " + subQuestionVariableName);
+						System.err.println("Could not find variable for sub question " + subQuestionVariableName);
 						continue;
 					}
 					
@@ -98,24 +101,18 @@ public class Main {
 				table.set(indexOfShortLabel, "T " + var.shortLabelFrench);
 			}
 			
-			/*
-			ArrayList<String> choiceLabels = getChoiceLabels(table);
 			
-			for (String choiceLabel : choiceLabels) {
-				int choiceLabelIndex = englishChoiceLabels.indexOf(choiceLabel);
-				if (choiceLabelIndex == -1) {
-					System.err.println("could not find " + choiceLabel + "\t" + var.variableName);
-					continue;
+			Map<String, String> choiceLabels = getChoices(table, var.codeWidth);
+			choiceLabels.forEach((code, label) -> {
+				//System.out.println(code);
+				boolean codePresent = var.choicesFrench.containsKey(code);
+				if(!codePresent){
+					System.err.println("Code " + code + " not found in variable " + var.variableName);
 				}
-				String frenchChoiceLabel = frenchChoiceLabels.get(choiceLabelIndex);
-				
-				//System.out.println(choiceLabel);
-				String choiceRow = filter(table, s -> s.contains(choiceLabel)).get(0);
-				int choiceRowIndexInTable = table.indexOf(choiceRow);
-				
-				table.set(choiceRowIndexInTable, choiceRow.replace(choiceLabel, frenchChoiceLabel));
-			}
-			//*/
+			});
+			
+			//break;
+			//System.out.println(sheetName);
 		}
 		
 		StringBuilder sb = new StringBuilder();
@@ -171,7 +168,15 @@ public class Main {
 		return a.stream().filter(p).collect(Collectors.toCollection(ArrayList::new));
 	}
 	
-	private static Map<String, String> getRows(ArrayList<String> table, int codeWidth) {
+	/**
+	 * Given a ArrayList of Strings, that contain choice labels with codes,
+	 * returns a map of codes -> choiceLabels
+	 * @param table the table containing the rows
+	 * @param codeWidth the codeWidth of the Question
+	 * @return a hashMap of codes mapping to the choiceLabels
+	 */
+	@Contract(pure = true)
+	private static Map<String, String> getChoices(@NotNull ArrayList<String> table, int codeWidth) {
 		ArrayList<String> rawRows = filter(table, s -> s.startsWith("R ") && !s.startsWith("R NET"));
 		Map<String, String> choices = new HashMap<>();
 		
@@ -180,7 +185,7 @@ public class Main {
 			String choiceLabel = row.substring(2, labelEndIndex);
 			String choiceCode;
 			int codeStartIndex;
-			codeStartIndex = codeWidth > 1 ? row.indexOf(',', labelEndIndex) : row.indexOf('-', labelEndIndex);
+			codeStartIndex = (codeWidth > 1 ? row.lastIndexOf(',') : row.indexOf('-', labelEndIndex)) + 1;
 			choiceCode = row.substring(codeStartIndex, codeStartIndex + codeWidth);
 			
 			choices.put(choiceCode, choiceLabel);
