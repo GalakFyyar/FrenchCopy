@@ -2,69 +2,69 @@ TABLE 1
 T Q1. Thinking about the issues presently facing Canada, which ONE do you feel should receive the GREATEST attention from the Government of Canada? That is, what should be the TOP priority? {b}[DO NOT READ LIST CAPTURE FIRST MENTION]{//b}
 T &wt Q1
 O rank
-R Economy;																											((1'D101' OR 1'D102') r(298:299,01)) OR (NOT(1'D101' OR 1'D102') r(496:498,001))																				
-R Jobs // unemployment;																								((1'D101' OR 1'D102') r(298:299,02)) OR (NOT(1'D101' OR 1'D102') r(496:498,002))	
-R Environment // climate change;																					((1'D101' OR 1'D102') r(298:299,03)) OR (NOT(1'D101' OR 1'D102') r(496:498,003))	
-R Health // health care;																							((1'D101' OR 1'D102') r(298:299,04)) OR (NOT(1'D101' OR 1'D102') r(496:498,004))	
-R Debt // deficit;																									((1'D101' OR 1'D102') r(298:299,05)) OR (NOT(1'D101' OR 1'D102') r(496:498,005))	
-R Cost of living;																									((1'D101' OR 1'D102') r(298:299,06)) OR (NOT(1'D101' OR 1'D102') r(496:498,006))	
-R Taxes;																											((1'D101' OR 1'D102') r(298:299,07)) OR (NOT(1'D101' OR 1'D102') r(496:498,007))	
-R Employment insurance;																								((1'D101' OR 1'D102') r(298:299,08)) OR (NOT(1'D101' OR 1'D102') r(496:498,008))	
-R Trade // international trade // trade agreements;																	((1'D101' OR 1'D102') r(298:299,09)) OR (NOT(1'D101' OR 1'D102') r(496:498,009))	
-R Infrastructure (general mention);																					((1'D101' OR 1'D102') r(298:299,10)) OR (NOT(1'D101' OR 1'D102') r(496:498,010))	
-R Infrastructure - public transit;																					((1'D101' OR 1'D102') r(298:299,11)) OR (NOT(1'D101' OR 1'D102') r(496:498,011))	
-R Infrastructure - roads//highways;																					((1'D101' OR 1'D102') r(298:299,12)) OR (NOT(1'D101' OR 1'D102') r(496:498,012))	
-R Infrastructure - bridges;																							((1'D101' OR 1'D102') r(298:299,13)) OR (NOT(1'D101' OR 1'D102') r(496:498,013))	
-R Infrastructure - other;																							((1'D101' OR 1'D102') r(298:299,14)) OR (NOT(1'D101' OR 1'D102') r(496:498,014))	
-R Education;																										((1'D101' OR 1'D102') r(298:299,15)) OR (NOT(1'D101' OR 1'D102') r(496:498,015))	
-R ISIS//Syria//Iraq mission;																						((1'D101' OR 1'D102') r(298:299,16)) OR (NOT(1'D101' OR 1'D102') r(496:498,016))	
-R Terrorism // security;																							((1'D101' OR 1'D102') r(298:299,17)) OR (NOT(1'D101' OR 1'D102') r(496:498,017))	
-R Refugees;																											((1'D101' OR 1'D102') r(298:299,18)) OR (NOT(1'D101' OR 1'D102') r(496:498,018))	
-R Immigration;																										((1'D101' OR 1'D102') r(298:299,19)) OR (NOT(1'D101' OR 1'D102') r(496:498,019))	
-R Indigenous issues;																								((1'D101' OR 1'D102') r(298:299,20)) OR (NOT(1'D101' OR 1'D102') r(496:498,020))	
-R Crime;																											((1'D101' OR 1'D102') r(298:299,21)) OR (NOT(1'D101' OR 1'D102') r(496:498,021))	
-R Drugs//marijuana;																									((1'D101' OR 1'D102') r(298:299,22)) OR (NOT(1'D101' OR 1'D102') r(496:498,022))	
-R Poverty//homelessness;																							((1'D101' OR 1'D102') r(298:299,23)) OR (NOT(1'D101' OR 1'D102') r(496:498,023))	
-R Oil // pipelines;																									((1'D101' OR 1'D102') r(298:299,24)) OR (NOT(1'D101' OR 1'D102') r(496:498,024))	
-R Government service delivery to citizens;																			((1'D101' OR 1'D102') r(298:299,25)) OR (NOT(1'D101' OR 1'D102') r(496:498,025))	
-R Affordable housing;																								((1'D101' OR 1'D102') r(298:299,30)) OR (NOT(1'D101' OR 1'D102') r(496:498,030))	
-R Cell phone cost // coverage;																						((1'D101' OR 1'D102') r(298:299,31)) OR (NOT(1'D101' OR 1'D102') r(496:498,031))	
-R Childcare // daycare;																								((1'D101' OR 1'D102') r(298:299,32)) OR (NOT(1'D101' OR 1'D102') r(496:498,032))	
-R Other health care issues (e.g. assisted suicide, abortion);														((1'D101' OR 1'D102') r(298:299,33)) OR (NOT(1'D101' OR 1'D102') r(496:498,033))	
-R Senior care;																										((1'D101' OR 1'D102') r(298:299,34)) OR (NOT(1'D101' OR 1'D102') r(496:498,034))	
-R Social services // programs;																						((1'D101' OR 1'D102') r(298:299,35)) OR (NOT(1'D101' OR 1'D102') r(496:498,035))	
-R Government // political representation;																			((1'D101' OR 1'D102') r(298:299,36)) OR (NOT(1'D101' OR 1'D102') r(496:498,036))	
-R Canadian values // culture;																								((1'D101' OR 1'D102') r(298:299,43)) OR (NOT(1'D101' OR 1'D102') r(496:498,043))	
-R Hydro;																											((1'D101' OR 1'D102') r(298:299,44)) OR (NOT(1'D101' OR 1'D102') r(496:498,044))	
-R Electoral reform;																									((1'D101' OR 1'D102') r(298:299,45)) OR (NOT(1'D101' OR 1'D102') r(496:498,045))	
-R Pensions;																											((1'D101' OR 1'D102') r(298:299,46)) OR (NOT(1'D101' OR 1'D102') r(496:498,046))	
-R Honesty // keeping promises;																						((1'D101' OR 1'D102') r(298:299,47)) OR (NOT(1'D101' OR 1'D102') r(496:498,047))	
-R Renewable // alternative energy;																					((1'D101' OR 1'D102') r(298:299,48)) OR (NOT(1'D101' OR 1'D102') r(496:498,048))	
-R Minimum wage;																										((1'D101' OR 1'D102') r(298:299,49)) OR (NOT(1'D101' OR 1'D102') r(496:498,049))	
-R Language issues;																									((1'D101' OR 1'D102') r(298:299,50)) OR (NOT(1'D101' OR 1'D102') r(496:498,050))	
-R Foreign policy;																									((1'D101' OR 1'D102') r(298:299,51)) OR (NOT(1'D101' OR 1'D102') r(496:498,051))	
-R Natural resource management;																						((1'D101' OR 1'D102') r(298:299,54)) OR (NOT(1'D101' OR 1'D102') r(496:498,054))	
-R Families;																											((1'D101' OR 1'D102') r(298:299,55)) OR (NOT(1'D101' OR 1'D102') r(496:498,055))	
-R Canadians;																										((1'D101' OR 1'D102') r(298:299,56)) OR (NOT(1'D101' OR 1'D102') r(496:498,056))	
-R Racism;																											((1'D101' OR 1'D102') r(298:299,57)) OR (NOT(1'D101' OR 1'D102') r(496:498,057))	
-R National unity;																									((1'D101' OR 1'D102') r(298:299,58)) OR (NOT(1'D101' OR 1'D102') r(496:498,058))	
-R Gender equality;																									((1'D101' OR 1'D102') r(298:299,59)) OR (NOT(1'D101' OR 1'D102') r(496:498,059))	
-R Ending sale of weapons to the middle east;																		((1'D101' OR 1'D102') r(298:299,60)) OR (NOT(1'D101' OR 1'D102') r(496:498,060))	
-R Role // recognition of Quebec;																					((1'D101' OR 1'D102') r(298:299,61)) OR (NOT(1'D101' OR 1'D102') r(496:498,061))	
-R Veteran Affairs;																									((1'D101' OR 1'D102') r(298:299,62)) OR (NOT(1'D101' OR 1'D102') r(496:498,062))	
-R US Elections;																										((1'D101' OR 1'D102') r(298:299,63)) OR (NOT(1'D101' OR 1'D102') r(496:498,063))	
-R Canada-US relations;																								((1'D101' OR 1'D102') r(298:299,64)) OR (NOT(1'D101' OR 1'D102') r(496:498,064))	
-R Rise of energy prices (electricity, hydro, gas//fuel);															((1'D101' OR 1'D102') r(298:299,65)) OR (NOT(1'D101' OR 1'D102') r(496:498,065))	
-R Fiscal responsibility, control unnecessary spending;																((1'D101' OR 1'D102') r(298:299,66)) OR (NOT(1'D101' OR 1'D102') r(496:498,066))	
-R Carbon tax;																										((1'D101' OR 1'D102') r(298:299,67)) OR (NOT(1'D101' OR 1'D102') r(496:498,067))	
-R Agriculture//farmer's concerns;																					((1'D101' OR 1'D102') r(298:299,68)) OR (NOT(1'D101' OR 1'D102') r(496:498,068))	
-R World peace//nations;																								((1'D101' OR 1'D102') r(298:299,69)) OR (NOT(1'D101' OR 1'D102') r(496:498,069))	
-R Income equality;																									((1'D101' OR 1'D102') r(298:299,70)) OR (NOT(1'D101' OR 1'D102') r(496:498,070))	
-R Ousting Trudeau//Liberals from political power;																	((1'D101' OR 1'D102') r(298:299,71)) OR (NOT(1'D101' OR 1'D102') r(496:498,071))	
-R Income inequality, middle//low income concerns;																	((1'D101' OR 1'D102') r(298:299,72)) OR (NOT(1'D101' OR 1'D102') r(496:498,072))	
-R Phoenix payroll system issues;																					((1'D101' OR 1'D102') r(298:299,73)) OR (NOT(1'D101' OR 1'D102') r(496:498,073))	
-R Energy management (general mention);																				((1'D101' OR 1'D102') r(298:299,74)) OR (NOT(1'D101' OR 1'D102') r(496:498,074))	
-R Children, welfare of children;																					((1'D101' OR 1'D102') r(298:299,75)) OR (NOT(1'D101' OR 1'D102') r(496:498,075))	
+R Economy;																											((1'D101' OR 1'D102') r(298:299,01)) OR (NOT(1'D101' OR 1'D102') r(496:498,001))
+R Jobs // unemployment;																								((1'D101' OR 1'D102') r(298:299,02)) OR (NOT(1'D101' OR 1'D102') r(496:498,002))
+R Environment // climate change;																					((1'D101' OR 1'D102') r(298:299,03)) OR (NOT(1'D101' OR 1'D102') r(496:498,003))
+R Health // health care;																							((1'D101' OR 1'D102') r(298:299,04)) OR (NOT(1'D101' OR 1'D102') r(496:498,004))
+R Debt // deficit;																									((1'D101' OR 1'D102') r(298:299,05)) OR (NOT(1'D101' OR 1'D102') r(496:498,005))
+R Cost of living;																									((1'D101' OR 1'D102') r(298:299,06)) OR (NOT(1'D101' OR 1'D102') r(496:498,006))
+R Taxes;																											((1'D101' OR 1'D102') r(298:299,07)) OR (NOT(1'D101' OR 1'D102') r(496:498,007))
+R Employment insurance;																								((1'D101' OR 1'D102') r(298:299,08)) OR (NOT(1'D101' OR 1'D102') r(496:498,008))
+R Trade // international trade // trade agreements;																	((1'D101' OR 1'D102') r(298:299,09)) OR (NOT(1'D101' OR 1'D102') r(496:498,009))
+R Infrastructure (general mention);																					((1'D101' OR 1'D102') r(298:299,10)) OR (NOT(1'D101' OR 1'D102') r(496:498,010))
+R Infrastructure - public transit;																					((1'D101' OR 1'D102') r(298:299,11)) OR (NOT(1'D101' OR 1'D102') r(496:498,011))
+R Infrastructure - roads//highways;																					((1'D101' OR 1'D102') r(298:299,12)) OR (NOT(1'D101' OR 1'D102') r(496:498,012))
+R Infrastructure - bridges;																							((1'D101' OR 1'D102') r(298:299,13)) OR (NOT(1'D101' OR 1'D102') r(496:498,013))
+R Infrastructure - other;																							((1'D101' OR 1'D102') r(298:299,14)) OR (NOT(1'D101' OR 1'D102') r(496:498,014))
+R Education;																										((1'D101' OR 1'D102') r(298:299,15)) OR (NOT(1'D101' OR 1'D102') r(496:498,015))
+R ISIS//Syria//Iraq mission;																						((1'D101' OR 1'D102') r(298:299,16)) OR (NOT(1'D101' OR 1'D102') r(496:498,016))
+R Terrorism // security;																							((1'D101' OR 1'D102') r(298:299,17)) OR (NOT(1'D101' OR 1'D102') r(496:498,017))
+R Refugees;																											((1'D101' OR 1'D102') r(298:299,18)) OR (NOT(1'D101' OR 1'D102') r(496:498,018))
+R Immigration;																										((1'D101' OR 1'D102') r(298:299,19)) OR (NOT(1'D101' OR 1'D102') r(496:498,019))
+R Indigenous issues;																								((1'D101' OR 1'D102') r(298:299,20)) OR (NOT(1'D101' OR 1'D102') r(496:498,020))
+R Crime;																											((1'D101' OR 1'D102') r(298:299,21)) OR (NOT(1'D101' OR 1'D102') r(496:498,021))
+R Drugs//marijuana;																									((1'D101' OR 1'D102') r(298:299,22)) OR (NOT(1'D101' OR 1'D102') r(496:498,022))
+R Poverty//homelessness;																							((1'D101' OR 1'D102') r(298:299,23)) OR (NOT(1'D101' OR 1'D102') r(496:498,023))
+R Oil // pipelines;																									((1'D101' OR 1'D102') r(298:299,24)) OR (NOT(1'D101' OR 1'D102') r(496:498,024))
+R Government service delivery to citizens;																			((1'D101' OR 1'D102') r(298:299,25)) OR (NOT(1'D101' OR 1'D102') r(496:498,025))
+R Affordable housing;																								((1'D101' OR 1'D102') r(298:299,30)) OR (NOT(1'D101' OR 1'D102') r(496:498,030))
+R Cell phone cost // coverage;																						((1'D101' OR 1'D102') r(298:299,31)) OR (NOT(1'D101' OR 1'D102') r(496:498,031))
+R Childcare // daycare;																								((1'D101' OR 1'D102') r(298:299,32)) OR (NOT(1'D101' OR 1'D102') r(496:498,032))
+R Other health care issues (e.g. assisted suicide, abortion);														((1'D101' OR 1'D102') r(298:299,33)) OR (NOT(1'D101' OR 1'D102') r(496:498,033))
+R Senior care;																										((1'D101' OR 1'D102') r(298:299,34)) OR (NOT(1'D101' OR 1'D102') r(496:498,034))
+R Social services // programs;																						((1'D101' OR 1'D102') r(298:299,35)) OR (NOT(1'D101' OR 1'D102') r(496:498,035))
+R Government // political representation;																			((1'D101' OR 1'D102') r(298:299,36)) OR (NOT(1'D101' OR 1'D102') r(496:498,036))
+R Canadian values // culture;																						((1'D101' OR 1'D102') r(298:299,43)) OR (NOT(1'D101' OR 1'D102') r(496:498,043))
+R Hydro;																											((1'D101' OR 1'D102') r(298:299,44)) OR (NOT(1'D101' OR 1'D102') r(496:498,044))
+R Electoral reform;																									((1'D101' OR 1'D102') r(298:299,45)) OR (NOT(1'D101' OR 1'D102') r(496:498,045))
+R Pensions;																											((1'D101' OR 1'D102') r(298:299,46)) OR (NOT(1'D101' OR 1'D102') r(496:498,046))
+R Honesty // keeping promises;																						((1'D101' OR 1'D102') r(298:299,47)) OR (NOT(1'D101' OR 1'D102') r(496:498,047))
+R Renewable // alternative energy;																					((1'D101' OR 1'D102') r(298:299,48)) OR (NOT(1'D101' OR 1'D102') r(496:498,048))
+R Minimum wage;																										((1'D101' OR 1'D102') r(298:299,49)) OR (NOT(1'D101' OR 1'D102') r(496:498,049))
+R Language issues;																									((1'D101' OR 1'D102') r(298:299,50)) OR (NOT(1'D101' OR 1'D102') r(496:498,050))
+R Foreign policy;																									((1'D101' OR 1'D102') r(298:299,51)) OR (NOT(1'D101' OR 1'D102') r(496:498,051))
+R Natural resource management;																						((1'D101' OR 1'D102') r(298:299,54)) OR (NOT(1'D101' OR 1'D102') r(496:498,054))
+R Families;																											((1'D101' OR 1'D102') r(298:299,55)) OR (NOT(1'D101' OR 1'D102') r(496:498,055))
+R Canadians;																										((1'D101' OR 1'D102') r(298:299,56)) OR (NOT(1'D101' OR 1'D102') r(496:498,056))
+R Racism;																											((1'D101' OR 1'D102') r(298:299,57)) OR (NOT(1'D101' OR 1'D102') r(496:498,057))
+R National unity;																									((1'D101' OR 1'D102') r(298:299,58)) OR (NOT(1'D101' OR 1'D102') r(496:498,058))
+R Gender equality;																									((1'D101' OR 1'D102') r(298:299,59)) OR (NOT(1'D101' OR 1'D102') r(496:498,059))
+R Ending sale of weapons to the middle east;																		((1'D101' OR 1'D102') r(298:299,60)) OR (NOT(1'D101' OR 1'D102') r(496:498,060))
+R Role // recognition of Quebec;																					((1'D101' OR 1'D102') r(298:299,61)) OR (NOT(1'D101' OR 1'D102') r(496:498,061))
+R Veteran Affairs;																									((1'D101' OR 1'D102') r(298:299,62)) OR (NOT(1'D101' OR 1'D102') r(496:498,062))
+R US Elections;																										((1'D101' OR 1'D102') r(298:299,63)) OR (NOT(1'D101' OR 1'D102') r(496:498,063))
+R Canada-US relations;																								((1'D101' OR 1'D102') r(298:299,64)) OR (NOT(1'D101' OR 1'D102') r(496:498,064))
+R Rise of energy prices (electricity, hydro, gas//fuel);															((1'D101' OR 1'D102') r(298:299,65)) OR (NOT(1'D101' OR 1'D102') r(496:498,065))
+R Fiscal responsibility, control unnecessary spending;																((1'D101' OR 1'D102') r(298:299,66)) OR (NOT(1'D101' OR 1'D102') r(496:498,066))
+R Carbon tax;																										((1'D101' OR 1'D102') r(298:299,67)) OR (NOT(1'D101' OR 1'D102') r(496:498,067))
+R Agriculture//farmer's concerns;																					((1'D101' OR 1'D102') r(298:299,68)) OR (NOT(1'D101' OR 1'D102') r(496:498,068))
+R World peace//nations;																								((1'D101' OR 1'D102') r(298:299,69)) OR (NOT(1'D101' OR 1'D102') r(496:498,069))
+R Income equality;																									((1'D101' OR 1'D102') r(298:299,70)) OR (NOT(1'D101' OR 1'D102') r(496:498,070))
+R Ousting Trudeau//Liberals from political power;																	((1'D101' OR 1'D102') r(298:299,71)) OR (NOT(1'D101' OR 1'D102') r(496:498,071))
+R Income inequality, middle//low income concerns;																	((1'D101' OR 1'D102') r(298:299,72)) OR (NOT(1'D101' OR 1'D102') r(496:498,072))
+R Phoenix payroll system issues;																					((1'D101' OR 1'D102') r(298:299,73)) OR (NOT(1'D101' OR 1'D102') r(496:498,073))
+R Energy management (general mention);																				((1'D101' OR 1'D102') r(298:299,74)) OR (NOT(1'D101' OR 1'D102') r(496:498,074))
+R Children, welfare of children;																					((1'D101' OR 1'D102') r(298:299,75)) OR (NOT(1'D101' OR 1'D102') r(496:498,075))
 R Constitution//democracy (e.g: freedom of speech, citizen's rights, other human rights//equality issues...);		((1'D101' OR 1'D102') r(298:299,76)) OR (NOT(1'D101' OR 1'D102') r(496:498,076))
 R Military spending, armed forces, various;																			((1'D101' OR 1'D102') r(298:299,78)) OR (NOT(1'D101' OR 1'D102') r(496:498,078))
 R Social justice//equality;																							((1'D101' OR 1'D102') r(298:299,80)) OR (NOT(1'D101' OR 1'D102') r(496:498,080))
@@ -100,8 +100,8 @@ R ; null
 R Mean; a(300:301),r(300:301,01:10); fdp 1 freq novp
 
 TABLE 3
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T A. The economy
 T &wt Q3A
 Q r(302:303,01:99)
@@ -123,8 +123,8 @@ R ; null
 R Mean; a(302:303),r(302:303,01:10); fdp 1 freq novp
 
 TABLE 4
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T B. Creating jobs
 T &wt Q3B
 Q r(304:305,01:99)
@@ -146,8 +146,8 @@ R ; null
 R Mean; a(304:305),r(304:305,01:10); fdp 1 freq novp
 
 TABLE 5
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T C. Investing in infrastructure
 T &wt Q3C
 Q r(306:307,01:99)
@@ -169,8 +169,8 @@ R ; null
 R Mean; a(306:307),r(306:307,01:10); fdp 1 freq novp
 
 TABLE 6
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T D. Health care
 T &wt Q3D
 Q r(308:309,01:99)
@@ -192,8 +192,8 @@ R ; null
 R Mean; a(308:309),r(308:309,01:10); fdp 1 freq novp
 
 TABLE 7
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T E. National security
 T &wt Q3E
 Q r(596:597,01:99)
@@ -215,8 +215,8 @@ R ; null
 R Mean; a(596:597),r(596:597,01:10); fdp 1 freq novp
 
 TABLE 8
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T F. Immigration
 T &wt Q3F
 Q r(310:311,01:99)
@@ -238,8 +238,8 @@ R ; null
 R Mean; a(310:311),r(310:311,01:10); fdp 1 freq novp
 
 TABLE 9
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T G. Aboriginal issues (Enjeux autochtones)
 T &wt Q3G
 Q r(312:313,01:99)
@@ -261,8 +261,8 @@ R ; null
 R Mean; a(312:313),r(312:313,01:10); fdp 1 freq novp
 
 TABLE 10
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means &
-"completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T H. The environment
 T &wt Q3H
 Q r(314:315,01:99)
@@ -284,7 +284,8 @@ R ; null
 R Mean; a(314:315),r(314:315,01:10); fdp 1 freq novp
 
 TABLE 11
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE  -  If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T N. Canada-US relations
 T &wt Q3N
 Q r(590:591,01:99)
@@ -309,7 +310,8 @@ R Mean; a(590:591),r(590:591,01:10); fdp 1 freq novp
 
 TABLE 12
 T &wt Q3O
-T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE - If required, remind respondent: Please use a scale from 1 to 10, where 1 means "completely on the wrong track" and 10 means "completely on the right track".
+T Q3. Using the same scale, do you feel that the Government of Canada is on the right track or the wrong track in its management of the following issues? INTERVIEWER NOTE - If required, remind respondent: Please use a scale from 1 to 10, where 1 means
+T "completely on the wrong track" and 10 means "completely on the right track".
 T O. Reducing poverty in developing countries
 T &wt Q3O
 Q r(802:803,01:99)
@@ -1273,8 +1275,8 @@ R Don't know // no answer; 782-9
 
 
 TABLE 66
-T The Coast Guard conducts search and rescue for mariners in distress, responds to marine pollution incidents, provides ice breaking services, maintains navigational aids (such as buoys that indicate safe routes) and operates a vessel traffic control system in order to ensure the safe navigation of all vessels through Canada´s coastal waters. CCG2. For each of the following statements about the Canadian Coast Guard, please indicate whether you strongly disagree, disagree, agree, or strongly agree.
-T a. I have trust and confidence in the Coast Guard´s ability to save lives of people on ships in distress.
+T The Coast Guard conducts search and rescue for mariners in distress, responds to marine pollution incidents, provides ice breaking services, maintains navigational aids (such as buoys that indicate safe routes) and operates a vessel traffic control system in order to ensure the safe navigation of all vessels through Canada's coastal waters. CCG2. For each of the following statements about the Canadian Coast Guard, please indicate whether you strongly disagree, disagree, agree, or strongly agree.
+T a. I have trust and confidence in the Coast Guard's ability to save lives of people on ships in distress.
 T &wt CCG2A
 Q 789-1:9
 R Strongly agree; 783-1 
@@ -1285,8 +1287,8 @@ R Neutral (VOLUNTEERED); 783-8
 R Don't know // no answer (VOLUNTEERED); 783-9 
 
 TABLE 67
-T The Coast Guard conducts search and rescue for mariners in distress, responds to marine pollution incidents, provides ice breaking services, maintains navigational aids (such as buoys that indicate safe routes) and operates a vessel traffic control system in order to ensure the safe navigation of all vessels through Canada´s coastal waters. CCG2. For each of the following statements about the Canadian Coast Guard, please indicate whether you strongly disagree, disagree, agree, or strongly agree.
-T b. I have trust and confidence in the Coast Guard´s ability to protect the environment from oil spills.
+T The Coast Guard conducts search and rescue for mariners in distress, responds to marine pollution incidents, provides ice breaking services, maintains navigational aids (such as buoys that indicate safe routes) and operates a vessel traffic control system in order to ensure the safe navigation of all vessels through Canada's coastal waters. CCG2. For each of the following statements about the Canadian Coast Guard, please indicate whether you strongly disagree, disagree, agree, or strongly agree.
+T b. I have trust and confidence in the Coast Guard's ability to protect the environment from oil spills.
 T &wt CCG2B
 Q 784-1:9
 R Strongly agree; 784-1 
@@ -1411,7 +1413,7 @@ R ; null
 R Mean; a(687:688),r(687:688,01:10); fdp 1 freq novp
 
 TABLE 75
-T NUC3. Based on what you know, who is responsible for the regulation of Canada´s nuclear industry?
+T NUC3. Based on what you know, who is responsible for the regulation of Canada's nuclear industry?
 T &wt NUC3
 O rank
 Q r(689:690,01:99)
@@ -1885,7 +1887,7 @@ R Not very likely; 704-3
 R Not at all likely; 704-4 
 R DK//REF; 704-9 
 
-TABLE 109
+TABLE 103
 T CLASS. Please indicate if you feel you are a part of each of the following groups:
 T /A. Canadians living in poverty
 T &wt CLASSA
@@ -1894,7 +1896,7 @@ R Yes; 676-1
 R No; 676-2 
 R Don't know//Refused; 676-9 
 
-TABLE 110
+TABLE 104
 T CLASS. Please indicate if you feel you are a part of each of the following groups:
 T /B. Low-income Canadians
 T &wt CLASSB
@@ -1903,7 +1905,7 @@ R Yes; 677-1
 R No; 677-2 
 R Don't know//Refused; 677-9 
 
-TABLE 111
+TABLE 105
 T CLASS. Please indicate if you feel you are a part of each of the following groups:
 T /C. The working poor
 T &wt CLASSC
@@ -1912,7 +1914,7 @@ R Yes; 678-1
 R No; 678-2 
 R Don't know//Refused; 678-9 
 
-TABLE 112
+TABLE 106
 T CLASS. Please indicate if you feel you are a part of each of the following groups:
 T /D. Working class
 T &wt CLASSD
@@ -1921,7 +1923,7 @@ R Yes; 679-1
 R No; 679-2 
 R Don't know//Refused; 679-9 
 
-TABLE 113
+TABLE 107
 T CLASS. Please indicate if you feel you are a part of each of the following groups:
 T /E. Middle class
 T &wt CLASSE
@@ -1930,7 +1932,7 @@ R Yes; 680-1
 R No; 680-2 
 R Don't know//Refused; 680-9 
 
-TABLE 114
+TABLE 108
 T CLASS. Please indicate if you feel you are a part of each of the following groups:
 T /F. Those working to join the middle class
 T &wt CLASSF
@@ -1939,7 +1941,7 @@ R Yes; 681-1
 R No; 681-2 
 R Don't know//Refused; 681-9 
 
-TABLE 115
+TABLE 109
 T CLASS. Please indicate if you feel you are a part of each of the following groups:
 T /G. Upper class
 T &wt CLASSG
@@ -1948,7 +1950,7 @@ R Yes; 682-1
 R No; 682-2 
 R Don't know//Refused; 682-9 
 
-TABLE 116
+TABLE 110
 T CLASS. Please indicate if you feel you are a part of each of the following groups:
 T /H. Average Canadians
 T &wt CLASSH
@@ -1958,7 +1960,7 @@ R No; 683-2
 R Don't know//Refused; 683-9 
 
 
-TABLE 117
+TABLE 111
 T CLASS Summary of Yes
 T &wt CLASS_SUMMARY
 O rankvpct
@@ -1981,172 +1983,7 @@ R G. Upper class                             ; 682-1 ; vbase 8
 R H. Average Canadians                       ; 683-1 ; vbase 9
 
 
-
-
-TABLE 118
-T CP2. British Columbia and Alberta have a carbon tax. Quebec and Ontario have a cap and trade system. The federal government has announced that all provinces and territories will need to put one of these carbon pricing systems in place by 2018. The federal government has also announced that these carbon pricing systems will need to price carbon pollution at a minimum of ten dollars per tonne. This minimum price will increase ten dollars a year to fifty dollars a tonne in 2022. 
-T Do you support or oppose this plan? Please use a scale from 1 to 10 where 1 means you "strongly oppose" and 10 means you "strongly support".
-T &wt CP2
-Q r(560:561,01:99)
-R 1  -  Strongly Oppose; r(560:561,01)
-R 2; r(560:561,02)
-R 3; r(560:561,03)
-R 4; r(560:561,04)
-R 5; r(560:561,05)
-R 6; r(560:561,06)
-R 7; r(560:561,07)
-R 8; r(560:561,08)
-R 9; r(560:561,09)
-R 10  -  Strongly Support; r(560:561,10)
-R Don't know//Refused; r(560:561,99); nor
-
-TABLE 119
-T CP3. And why do you oppose this?
-T &wt CP3
-Q r(562:563/564:565...574:575,01:99)
-O rank
-R Canada does not have that much carbon emissions; r(562:563/564:565...574:575,01)
-R Bigger polluters aren't paying (ex: China, Russia, India, etc.); r(562:563/564:565...574:575,02)
-R Don't believe it// not realistic; r(562:563/564:565...574:575,03)
-R Bad for the environment; r(562:563/564:565...574:575,04)
-R Won't reduce carbon emissions// won't benefit the environment; r(562:563/564:565...574:575,05)
-R We're doing enough already; r(562:563/564:565...574:575,06)
-R Pollution is inevitable// can't be reduced; r(562:563/564:565...574:575,07)
-R We need more environmentally friendly technologies (to stop relying on oil); r(562:563/564:565...574:575,08)
-R Money// tax grab; r(562:563/564:565...574:575,09)
-R Cost// price increase// too expensive; r(562:563/564:565...574:575,10)
-R Bad for the economy// not competitive; r(562:563/564:565...574:575,11)
-R Job loss; r(562:563/564:565...574:575,12)
-R Better use of money elsewhere; r(562:563/564:565...574:575,13)
-R The government doesn't need the money// has enough money already; r(562:563/564:565...574:575,14)
-R Raises costs elsewhere (utilities, cost of living, gas, etc.); r(562:563/564:565...574:575,15)
-R The government gets the money; r(562:563/564:565...574:575,16)
-R Bad for industry// companies// business (in Canada); r(562:563/564:565...574:575,17)
-R Unsure where tax money will go; r(562:563/564:565...574:575,18)
-R Makes the rich richer// the rich won't have to pay (much); r(562:563/564:565...574:575,19)
-R Hurts some provinces// areas too much; r(562:563/564:565...574:575,20)
-R Small businesses will be financially affected; r(562:563/564:565...574:575,21)
-R Companies causing emissions need to pay (not us); r(562:563/564:565...574:575,22)
-R Hurts poor people// seniors (with little money); r(562:563/564:565...574:575,23)
-R Hurts (regular) people// workers// makes normal people pay; r(562:563/564:565...574:575,24)
-R Hurts the country (unspecified); r(562:563/564:565...574:575,25)
-R Lack of information// don't know much about it; r(562:563/564:565...574:575,26)
-R It's not good// it doesn't do any good (unspecified); r(562:563/564:565...574:575,27)
-R Wrong way to do it (reduce carbon footprints)// they don't know how to manage; r(562:563/564:565...574:575,28)
-R Not needed// don't see the point; r(562:563/564:565...574:575,29)
-R We need to be able to heat our homes and drive; r(562:563/564:565...574:575,30)
-R Ineffective// doesn't work; r(562:563/564:565...574:575,31)
-R False// wrong information is given to public about carbon; r(562:563/564:565...574:575,32)
-R It is a provincial responsibility only; r(562:563/564:565...574:575,33)
-R Taxes used for unwanted spending; r(562:563/564:565...574:575,34)
-R Creates inequalities// unfairness among provinces; r(562:563/564:565...574:575,40)
-R It's not helping; r(562:563/564:565...574:575,50)
-R It's not the solution to the problem// there are other ways; r(562:563/564:565...574:575,60)
-R Don't care// not a priority (for Canadians) at this time; r(562:563/564:565...574:575,65)
-R It's a government agenda// idea (to control and scare); r(562:563/564:565...574:575,66)
-R U.S. might not// will not impose it's own carbon tax; r(562:563/564:565...574:575,67)
-R Please specify; r(562:563/564:565...574:575,77)				; nor
-R Nothing; r(562:563/564:565...574:575,97)						; nor
-R Other; r(562:563/564:565...574:575,88)						; nor
-R Don't know // Refused; r(562:563/564:565...574:575,99)		; nor
-
-
-TABLE 120
-T CP4. And why do you support this?
-T &wt CP4
-Q r(576:577/578:579...588:589,01:99)
-O rank
-R Reduce climate change// protect the environment// the planet// Canada; r(576:577/578:579...588:589,01)
-R Reduce pollution// improve air quality// reduce (carbon) emissions; r(576:577/578:579...588:589,02)
-R We can't live without the environment; r(576:577/578:579...588:589,03)
-R For the sake of future (generations)// children; r(576:577/578:579...588:589,04)
-R Encourage people// companies to improve their practices; r(576:577/578:579...588:589,05)
-R Good for industries// incentive to develop better technology; r(576:577/578:579...588:589,06)
-R Support// focus on renewable sources of energy; r(576:577/578:579...588:589,07)
-R Reduce our dependency on oil// Fossil fuels are non renewable; r(576:577/578:579...588:589,08)
-R Become more sustainable// move to a more sustainable economy; r(576:577/578:579...588:589,09)
-R We should pay now (to improve the environment) rather than later (to help natural disaster victims); r(576:577/578:579...588:589,10)
-R Increased revenue for the government// help the economy; r(576:577/578:579...588:589,11)
-R Make polluters pay (more money); r(576:577/578:579...588:589,12)
-R Make all provinces// territories pay equally; r(576:577/578:579...588:589,13)
-R Everyone should pay (their share// a little bit); r(576:577/578:579...588:589,14)
-R Already have it// pay it; r(576:577/578:579...588:589,15)
-R Encourage people// companies to pay more attention// take responsibility (for environmental damage); r(576:577/578:579...588:589,16)
-R Improve public health; r(576:577/578:579...588:589,17)
-R Keep Canada's promises// international agreements; r(576:577/578:579...588:589,18)
-R We are not doing enough// measures need to be stricter; r(576:577/578:579...588:589,19)
-R Reduce emissions from vehicles// encourage people not to drive; r(576:577/578:579...588:589,20)
-R Research// analysis// keeping track of our impact; r(576:577/578:579...588:589,21)
-R We have to do it// it's important// necessary// good; r(576:577/578:579...588:589,22)
-R Creates jobs; r(576:577/578:579...588:589,23)
-R It's too late// climate change is here; r(576:577/578:579...588:589,24)
-R Find ways to save// conserve energy; r(576:577/578:579...588:589,25)
-R Time to move forward// evolve in our thinking; r(576:577/578:579...588:589,26)
-R I agree with// am knowledgeable (about climate change, carbon tax); r(576:577/578:579...588:589,27)
-R Other nations are trying// will follow Canada's lead; r(576:577/578:579...588:589,30)
-R Please specify; r(576:577/578:579...588:589,77)				; nor
-R Other; r(576:577/578:579...588:589,88)						; nor
-R Nothing; r(576:577/578:579...588:589,97)						; nor
-R Don't know // Refused; r(576:577/578:579...588:589,99)		; nor
-
-TABLE 121
-T BUD1. What have you seen, read or heard, if anything, about specific 2017 federal budget initiatives?
-T &wt BUD1
-O rank
-Q 326-2:4
-R Cancelling the public transit tax credit; r(333:334/335:336/337:338,01)
-R Infrastructure spending//initiatives; r(333:334/335:336/337:338,02)
-R Childcare investment//day care access; r(333:334/335:336/337:338,03)
-R Health care investments; r(333:334/335:336/337:338,04)
-R Climate change, environmental, carbon tax; r(333:334/335:336/337:338,05)
-R Debt//deficit will be high, overspending, debt will grow//continue; r(333:334/335:336/337:338,06)
-R Cuts to military spending//changes to military; r(333:334/335:336/337:338,07)
-R Investment in innovation//technology; r(333:334/335:336/337:338,08)
-R Tax credits taken away, tax credits cancelled (unspecified); r(333:334/335:336/337:338,09)
-R Women's rights//support; r(333:334/335:336/337:338,10)
-R No big changes, no surprises; r(333:334/335:336/337:338,11)
-R Public transportation infrastructure; r(333:334/335:336/337:338,12)
-R No new tax hikes, tax remains the same mostly; r(333:334/335:336/337:338,13)
-R Tax exemptions//changes to tax structure, middle class tax structure; r(333:334/335:336/337:338,14)
-R Family//parental supports//initiatives (mainly maternity leave extended, includes other unspecified family investments; r(333:334/335:336/337:338,15)
-R Education, skills training; r(333:334/335:336/337:338,16)
-R Raising taxes//tax hikes; r(333:334/335:336/337:338,17)
-R Raising taxes on tobacco//alcohol; r(333:334/335:336/337:338,18)
-R Cutting back//changes to0 child tax credit; r(333:334/335:336/337:338,19)
-R Employment initiatives, job creation; r(333:334/335:336/337:338,21)
-R Housing initiatives//investment for access//affordability; r(333:334/335:336/337:338,22)
-R Employment insurance increases//changes; r(333:334/335:336/337:338,23)
-R Indigenous issues//concerns addressed, investment in communities//access to clean water; r(333:334/335:336/337:338,24)
-R Legalizing marijuana; r(333:334/335:336/337:338,25)
-R Cancelling Canada savings bonds; r(333:334/335:336/337:338,27)
-R Economy//business investment; r(333:334/335:336/337:338,28)
-R Green energy initiatives; r(333:334/335:336/337:338,29)
-R Negative reactions to it//concerns, various; r(333:334/335:336/337:338,30)
-R Immigration//refugee investment, programs//supports; r(333:334/335:336/337:338,31)
-R Everything About It//Entire Breakdown//Budget in Detail; r(333:334/335:336/337:338,32)
-R Please specify :; r(333:334/335:336/337:338,77); nor
-R Other; r(333:334/335:336/337:338,88); nor
-R Don't Know//Refused; r(333:334/335:336/337:338,99); nor
-*
-TABLE 122
-T BUD2. Have you seen, read or heard information about the 2017 federal budget through any of the following means: [READ LIST  -  RECORD UP TO 9 MENTIONS]
-T &wt BUD2
-O rank
-Q 326-2:4
-R Conversations in person or on the phone with friends, family, or co-workers; r(339:340/341:342...355:356,01)
-R Status updates and personal opinions shared by friends on Facebook; r(339:340/341:342...355:356,02)
-R Stories or links shared on Facebook; r(339:340/341:342...355:356,03)
-R Opinions or links shared on Twitter; r(339:340/341:342...355:356,04)
-R Stories on online news sites; r(339:340/341:342...355:356,05)
-R Video posted on YouTube, social media, or online news sites; r(339:340/341:342...355:356,06)
-R Print newspaper stories; r(339:340/341:342...355:356,07)
-R Radio news stories; r(339:340/341:342...355:356,08)
-R TV news stories; r(339:340/341:342...355:356,09)
-R None of these sources; r(339:340/341:342...355:356,97)
-R DON'T KNOW; r(339:340/341:342...355:356,98); nor
-R REFUSED; r(339:340/341:342...355:356,99); nor
-*
-TABLE 123
+TABLE 112
 T E1. Thinking about the cost of living and your personal financial situation, are you currently:
 T &wt E1
 Q 360-1:9
@@ -2155,8 +1992,8 @@ R Just getting by, with no savings; 360-2
 R Getting ahead, with some savings; 360-3
 R Financially secure; 360-4
 R Don't know//Refused; 360-9
-*
-TABLE 124
+
+TABLE 113
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /A. Reduce your greenhouse gas pollution
 T &wt GHG1A
@@ -2177,8 +2014,8 @@ R 10  -  Very likely; r(361:362,10)
 R Don't know//Refused; r(361:362,99); nor
 R ; null
 R Mean; a(361:362),r(361:362,01:10); fdp 1 freq novp
-*
-TABLE 125
+
+TABLE 114
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /B. Make more energy efficient choices when buying appliances
 T &wt GHG1B
@@ -2199,8 +2036,8 @@ R 10  -  Very likely; r(363:364,10)
 R Don't know//Refused; r(363:364,99); nor
 R ; null
 R Mean; a(363:364),r(363:364,01:10); fdp 1 freq novp
-*
-TABLE 126
+
+TABLE 115
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /CX. Make healthier choices when buying food 
 T &wt GHG1CX
@@ -2221,10 +2058,9 @@ R 10  -  Very likely; r(365:366,10)
 R Don't know//Refused; r(365:366,99); nor
 R ; null
 R Mean; a(365:366),r(365:366,01:10); fdp 1 freq novp
-*
 
 
-TABLE 127
+TABLE 116
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /CY. Live a healthier lifestyle
 T &wt GHG1CY
@@ -2245,10 +2081,10 @@ R 10  -  Very likely; r(367:368,10)
 R Don't know//Refused; r(367:368,99); nor
 R ; null
 R Mean; a(367:368),r(367:368,01:10); fdp 1 freq novp
-*
 
 
-TABLE 128
+
+TABLE 117
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /DX. Take advantage of more tax credits you are eligible to receive
 T &wt GHG1DX
@@ -2269,10 +2105,10 @@ R 10  -  Very likely; r(369:370,10)
 R Don't know//Refused; r(369:370,99); nor
 R ; null
 R Mean; a(369:370),r(369:370,01:10); fdp 1 freq novp
-*
 
 
-TABLE 129
+
+TABLE 118
 T GHG1. How likely are you to take steps to do the following things over the next 12 months? Please use a scale from 1 to 10 where 1 means you are "not at all likely" and 10 means you are "very likely".
 T /DY. Take advantage of opportunities for job training and skills upgrades
 T &wt GHG1DY
@@ -2295,7 +2131,7 @@ R ; null
 R Mean; a(371:372),r(371:372,01:10); fdp 1 freq novp
 
 
-TABLE 130
+TABLE 119
 T GHG1 Summary of 7 - 10 scores
 T &wt GHG1_SUMMARY
 O rankvpct
@@ -2314,7 +2150,7 @@ R null ; r(371:372,01:99); noprint
 R DY. Take advantage of opportunities for job training and skills upgrades; r(371:372,07:10); vbase -1
 
 
-TABLE 131
+TABLE 120
 T GHG2. What is preventing you from doing more to reduce your greenhouse gas pollution?
 T &wt GHG2
 O rank
@@ -2336,7 +2172,7 @@ R Please specify; r(377:378/379:380/381:382,77); nor
 R Other; r(377:378/379:380/381:382,88); nor
 R Don't know//Refused; r(377:378/379:380/381:382,99); nor
 
-TABLE 132
+TABLE 121
 T GHG3. How well informed, if at all, do you feel about doing the following things? Please use a scale from 1 to 10 where 1 means you feel "not at all informed" and 10 means you feel "very well informed".
 T /A. Reducing your greenhouse gas pollution
 T &wt GHG3A
@@ -2358,7 +2194,7 @@ R Don't know//Refused; r(383:384,99); nor
 R ; null
 R Mean; a(383:384),r(383:384,01:10); fdp 1 freq novp
 
-TABLE 133
+TABLE 122
 T GHG3. How well informed, if at all, do you feel about doing the following things? Please use a scale from 1 to 10 where 1 means you feel "not at all informed" and 10 means you feel "very well informed".
 T /B. Making more energy efficient choices when buying appliances
 T &wt GHG3B
@@ -2381,7 +2217,7 @@ R ; null
 R Mean; a(385:386),r(385:386,01:10); fdp 1 freq novp
 
 
-TABLE 134
+TABLE 123
 T GHG3. How well informed, if at all, do you feel about doing the following things? Please use a scale from 1 to 10 where 1 means you feel "not at all informed" and 10 means you feel "very well informed".
 T /CX. Making healthier choices when buying food
 T &wt GHG3CX
@@ -2405,7 +2241,7 @@ R Mean; a(387:388),r(387:388,01:10); fdp 1 freq novp
 
 
 
-TABLE 135
+TABLE 124
 T GHG3. How well informed, if at all, do you feel about doing the following things? Please use a scale from 1 to 10 where 1 means you feel "not at all informed" and 10 means you feel "very well informed".
 T /CY. Living a healthier lifestyle
 T &wt GHG3CY
@@ -2429,7 +2265,7 @@ R Mean; a(389:390),r(389:390,01:10); fdp 1 freq novp
 
 
 
-TABLE 136
+TABLE 125
 T GHG3. How well informed, if at all, do you feel about doing the following things? Please use a scale from 1 to 10 where 1 means you feel "not at all informed" and 10 means you feel "very well informed".
 T /DX. Taking advantage of more tax credits you are eligible to receive
 T &wt GHG3DX
@@ -2452,7 +2288,7 @@ R ; null
 R Mean; a(391:392),r(391:392,01:10); fdp 1 freq novp
 
 
-TABLE 137
+TABLE 126
 T GHG3. How well informed, if at all, do you feel about doing the following things? Please use a scale from 1 to 10 where 1 means you feel "not at all informed" and 10 means you feel "very well informed".
 T /DY. Taking advantage of opportunities for job training and skills upgrades
 T &wt GHG3DY
@@ -2474,7 +2310,7 @@ R Don't know//Refused; r(393:394,99); nor
 R ; null
 R Mean; a(393:394),r(393:394,01:10); fdp 1 freq novp
 
-TABLE 138
+TABLE 127
 T GHG3 Summary of 7 - 10 scores
 T &wt GHG3_SUMMARY
 O rankvpct
@@ -2496,7 +2332,7 @@ R DY. Taking advantage of opportunities for job training and skills upgrades; r(
 
 
 
-TABLE 139
+TABLE 128
 T GHG4. In the last two years, have you done any of the following things to save energy and reduce your greenhouse gas pollution?
 T /A. Lower the temperature you heat your home in the winter
 T &wt GHG4A
@@ -2505,7 +2341,7 @@ R Yes; 399-1
 R No; 399-2
 R Don't know // Refused; 399-9
 
-TABLE 140
+TABLE 129
 T GHG4. In the last two years, have you done any of the following things to save energy and reduce your greenhouse gas pollution?
 T /B. Raise the temperature to which you cool your home in summer
 T &wt GHG4B
@@ -2514,7 +2350,7 @@ R Yes; 400-1
 R No; 400-2
 R Don't know // Refused; 400-9
 
-TABLE 141
+TABLE 130
 T GHG4. In the last two years, have you done any of the following things to save energy and reduce your greenhouse gas pollution?
 T /C. Retrofit your home with energy efficient products
 T &wt GHG4C
@@ -2523,7 +2359,7 @@ R Yes; 401-1
 R No; 401-2
 R Don't know // Refused; 401-9
 
-TABLE 142
+TABLE 131
 T GHG4. In the last two years, have you done any of the following things to save energy and reduce your greenhouse gas pollution?
 T /D. Give preference to more environmentally-friendly transportation modes, such as car-pooling, walking, cycling, or public transit
 T &wt GHG4D
@@ -2532,7 +2368,7 @@ R Yes; 402-1
 R No; 402-2
 R Don't know // Refused; 402-9
 
-TABLE 143
+TABLE 132
 T GHG4. In the last two years, have you done any of the following things to save energy and reduce your greenhouse gas pollution?
 T /E. Purchase an environmentally-friendly vehicle, such as a hybrid or electric car
 T &wt GHG4E
@@ -2541,7 +2377,7 @@ R Yes; 403-1
 R No; 403-2
 R Don't know // Refused; 403-9
 
-TABLE 144
+TABLE 133
 T OATH1. Persons 14 years or older who apply for citizenship must take the Oath of Citizenship to become a Canadian citizen. In order to redress the legacy of residential schools and advance the process of Canadian reconciliation, one of the Truth and Re&
 conciliation Commission recommendations was to change the last sentence of the Oath of Citizenship from ...
 T "I will faithfully observe the laws of Canada, and fulfill my duties as a Canadian citizen" to "I will faithfully observe the laws of Canada including Treaties with Indigenous Peoples, and fulfill my duties as a Canadian citizen". To what extent do you&
@@ -2565,7 +2401,7 @@ R Don't know//Refused; r(404:405,99); nor
 R ; null
 R Mean; a(404:405),r(404:405,01:10); fdp 1 freq novp
 
-TABLE 145
+TABLE 134
 T H1. Which of the following best describes your housing arrangement: Do you...
 T &wt H1
 Q 406-1:9
@@ -2576,7 +2412,7 @@ R DK//Ref; 406-9
 
 
 
-TABLE 146
+TABLE 135
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /AX. Food security in northern communities
 T &wt QFOOD1AX
@@ -2599,7 +2435,7 @@ R ; null
 R Mean; a(514:515),r(514:515,01:10); fdp 1 freq novp
 
 
-TABLE 147
+TABLE 136
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /AY. Food security in indigenous communities
 T &wt QFOOD1AY
@@ -2622,7 +2458,7 @@ R ; null
 R Mean; a(516:517),r(516:517,01:10); fdp 1 freq novp
 
 
-TABLE 148
+TABLE 137
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /BX. Global food security
 T &wt QFOOD1BX
@@ -2645,7 +2481,7 @@ R ; null
 R Mean; a(518:519),r(518:519,01:10); fdp 1 freq novp
 
 
-TABLE 149
+TABLE 138
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /BY. Combating hunger in poorer countries around the world
 T &wt QFOOD1BY
@@ -2668,7 +2504,7 @@ R ; null
 R Mean; a(520:521),r(520:521,01:10); fdp 1 freq novp
 
 
-TABLE 150
+TABLE 139
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /CX. Food fraud
 T &wt QFOOD1CX
@@ -2691,7 +2527,7 @@ R ; null
 R Mean; a(522:523),r(522:523,01:10); fdp 1 freq novp
 
 
-TABLE 151
+TABLE 140
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /CY. Deceptive labels on food products
 T &wt QFOOD1CY
@@ -2714,7 +2550,7 @@ R ; null
 R Mean; a(524:525),r(524:525,01:10); fdp 1 freq novp
 
 
-TABLE 152
+TABLE 141
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /DX. Food inspections and safety
 T &wt QFOOD1DX
@@ -2737,7 +2573,7 @@ R ; null
 R Mean; a(526:527),r(526:527,01:10); fdp 1 freq novp
 
 
-TABLE 153
+TABLE 142
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /DY. Preventing diseases caused by contaminated food
 T &wt QFOOD1DY
@@ -2760,7 +2596,7 @@ R ; null
 R Mean; a(528:529),r(528:529,01:10); fdp 1 freq novp
 
 
-TABLE 154
+TABLE 143
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /EX. Ensuring the success of farmers and family farms
 T &wt QFOOD1EX
@@ -2783,7 +2619,7 @@ R ; null
 R Mean; a(530:531),r(530:531,01:10); fdp 1 freq novp
 
 
-TABLE 155
+TABLE 144
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /EY. Sustainability of food production
 T &wt QFOOD1EY
@@ -2806,7 +2642,7 @@ R ; null
 R Mean; a(532:533),r(532:533,01:10); fdp 1 freq novp
 
 
-TABLE 156
+TABLE 145
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /FX. The resilience of Canada's food supply against weather and pests
 T &wt QFOOD1FX
@@ -2829,7 +2665,7 @@ R ; null
 R Mean; a(534:535),r(534:535,01:10); fdp 1 freq novp
 
 
-TABLE 157
+TABLE 146
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /FY. The resilience of Canada's food supply against market downturns
 T &wt QFOOD1FY
@@ -2852,7 +2688,7 @@ R ; null
 R Mean; a(536:537),r(536:537,01:10); fdp 1 freq novp
 
 
-TABLE 158
+TABLE 147
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /G. Food affordability
 T &wt QFOOD1G
@@ -2875,7 +2711,7 @@ R ; null
 R Mean; a(550:551),r(550:551,01:10); fdp 1 freq novp
 
 
-TABLE 159
+TABLE 148
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /H. Food loss and waste
 T &wt QFOOD1H
@@ -2898,7 +2734,7 @@ R ; null
 R Mean; a(552:553),r(552:553,01:10); fdp 1 freq novp
 
 
-TABLE 160
+TABLE 149
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /I. The impact of climate change on our food supply
 T &wt QFOOD1I
@@ -2921,7 +2757,7 @@ R ; null
 R Mean; a(554:555),r(554:555,01:10); fdp 1 freq novp
 
 
-TABLE 161
+TABLE 150
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /J. Innovation and technology in agri-food sector
 T &wt QFOOD1J
@@ -2944,7 +2780,7 @@ R ; null
 R Mean; a(556:557),r(556:557,01:10); fdp 1 freq novp
 
 
-TABLE 162
+TABLE 151
 T FOOD1. Thinking about challenges related to food, how high of a priority, if at all, should each of the following topics be for the government of Canada? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /K. Encouraging healthy eating habits
 T &wt QFOOD1K
@@ -2969,7 +2805,7 @@ R Mean; a(558:559),r(558:559,01:10); fdp 1 freq novp
 
 
 
-TABLE 163
+TABLE 152
 T FOOD1 Summary of 7 - 10 scores
 T &wt QFOOD1_SUMMARY
 O rankvpct
@@ -3009,7 +2845,7 @@ R I. The impact of climate change on our food supply; r(554:555,07:10)          
 R J. Innovation and technology in agri-food sector; r(556:557,07:10)                          ; vbase 17
 R K. Encouraging healthy eating habits; r(558:559,07:10)                                      ; vbase 18
 
-TABLE 164
+TABLE 153
 T IT1. Please indicate whether you think that overall, international trade harms or benefits each of the following within Canada.
 T /A. Large Businesses
 T &wt QIT1A
@@ -3031,7 +2867,7 @@ R Don't know//Refused; r(598:599,99); nor
 R ; null
 R Mean; a(598:599),r(598:599,01:10); fdp 1 freq novp
 
-TABLE 165
+TABLE 154
 T IT1. Please indicate whether you think that overall, international trade harms or benefits each of the following within Canada.
 T /B. Canadian economy as a whole
 T &wt QIT1B
@@ -3053,7 +2889,7 @@ R Don't know//Refused; r(600:601,99); nor
 R ; null
 R Mean; a(600:601),r(600:601,01:10); fdp 1 freq novp
 
-TABLE 166
+TABLE 155
 T IT1. Please indicate whether you think that overall, international trade harms or benefits each of the following within Canada.
 T /C. Businesses in your community
 T &wt QIT1C
@@ -3075,7 +2911,7 @@ R Don't know//Refused; r(602:603,99); nor
 R ; null
 R Mean; a(602:603),r(602:603,01:10); fdp 1 freq novp
 
-TABLE 167
+TABLE 156
 T IT1. Please indicate whether you think that overall, international trade harms or benefits each of the following within Canada.
 T /D. The middle class
 T &wt QIT1D
@@ -3097,7 +2933,7 @@ R Don't know//Refused; r(604:605,99); nor
 R ; null
 R Mean; a(604:605),r(604:605,01:10); fdp 1 freq novp
 
-TABLE 168
+TABLE 157
 T IT1. Please indicate whether you think that overall, international trade harms or benefits each of the following within Canada.
 T /E. Women business leaders
 T &wt QIT1E
@@ -3119,7 +2955,7 @@ R Don't know//Refused; r(606:607,99); nor
 R ; null
 R Mean; a(606:607),r(606:607,01:10); fdp 1 freq novp
 
-TABLE 169
+TABLE 158
 T IT1. Please indicate whether you think that overall, international trade harms or benefits each of the following within Canada.
 T /F. Small and medium sized businesses
 T &wt QIT1F
@@ -3141,7 +2977,7 @@ R Don't know//Refused; r(608:609,99); nor
 R ; null
 R Mean; a(608:609),r(608:609,01:10); fdp 1 freq novp
 
-TABLE 170
+TABLE 159
 T IT1. Please indicate whether you think that overall, international trade harms or benefits each of the following within Canada.
 T /G. You and your family
 T &wt QIT1G
@@ -3164,7 +3000,7 @@ R ; null
 R Mean; a(610:611),r(610:611,01:10); fdp 1 freq novp
 
 
-TABLE 171
+TABLE 160
 T IT1 Summary of 7 - 10 scores
 T &wt QIT1_SUMMARY
 O rankvpct
@@ -3187,7 +3023,7 @@ R G. You and your family;						r(610:611,07:10)					; vbase 8
 
 
 
-TABLE 172
+TABLE 161
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /A. Ensuring all parties to trade agreements live up to their obligations
 T &wt QIT2A
@@ -3209,7 +3045,7 @@ R Don't know//Refused; r(612:613,99); nor
 R ; null
 R Mean; a(612:613),r(612:613,01:10); fdp 1 freq novp
 
-TABLE 173
+TABLE 162
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /B. Helping small and medium sized businesses export their products internationally
 T &wt QIT2B
@@ -3231,7 +3067,7 @@ R Don't know//Refused; r(614:615,99); nor
 R ; null
 R Mean; a(614:615),r(614:615,01:10); fdp 1 freq novp
 
-TABLE 174
+TABLE 163
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /C. Ensuring Canadians have access to a wider selection of goods and services
 T &wt QIT2C
@@ -3253,7 +3089,7 @@ R Don't know//Refused; r(616:617,99); nor
 R ; null
 R Mean; a(616:617),r(616:617,01:10); fdp 1 freq novp
 
-TABLE 175
+TABLE 164
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /DX. Attracting foreign investment
 T &wt QIT2DX
@@ -3275,7 +3111,7 @@ R Don't know//Refused; r(618:619,99); nor
 R ; null
 R Mean; a(618:619),r(618:619,01:10); fdp 1 freq novp
 
-TABLE 176
+TABLE 165
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /DY. Attracting international investment
 T &wt QIT2DY
@@ -3297,7 +3133,7 @@ R Don't know//Refused; r(620:621,99); nor
 R ; null
 R Mean; a(620:621),r(620:621,01:10); fdp 1 freq novp
 
-TABLE 177
+TABLE 166
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /EX. Strengthening existing trade agreements with other countries
 T &wt QIT2EX
@@ -3319,7 +3155,7 @@ R Don't know//Refused; r(622:623,99); nor
 R ; null
 R Mean; a(622:623),r(622:623,01:10); fdp 1 freq novp
 
-TABLE 178
+TABLE 167
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /EY. Negotiating new trade agreements with other countries
 T &wt QIT2EY
@@ -3341,7 +3177,7 @@ R Don't know//Refused; r(624:625,99); nor
 R ; null
 R Mean; a(624:625),r(624:625,01:10); fdp 1 freq novp
 
-TABLE 179
+TABLE 168
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /F. Advancing Canadian values
 T &wt QIT2F
@@ -3363,7 +3199,7 @@ R Don't know//Refused; r(626:627,99); nor
 R ; null
 R Mean; a(626:627),r(626:627,01:10); fdp 1 freq novp
 
-TABLE 180
+TABLE 169
 T IT2. Please indicate how much of a priority, if at all, each of the following international trade issues should be for the Government of Canada.
 T /G. Protecting Canadian companies from international competition
 T &wt QIT2G
@@ -3386,7 +3222,7 @@ R ; null
 R Mean; a(628:629),r(628:629,01:10); fdp 1 freq novp
 
 
-TABLE 181
+TABLE 170
 T IT2 Summary of 7 - 10 scores
 T &wt QIT2_SUMMARY
 O rankvpct
@@ -3411,7 +3247,7 @@ R F.  Advancing Canadian values;															r(626:627,07:10)	; vbase 9
 R G.  Protecting Canadian companies from international competition;							r(628:629,07:10)	; vbase 10
 
 
-TABLE 182
+TABLE 171
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /AX. Create jobs in the culture sector
 T &wt QCUL1AX
@@ -3433,7 +3269,7 @@ R Don't know//Refused; r(631:632,99); nor
 R ; null
 R Mean; a(631:632),r(631:632,01:10); fdp 1 freq novp
 
-TABLE 183
+TABLE 172
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /AY. Provide support to content creators so they can earn a living
 T &wt QCUL1AY
@@ -3455,7 +3291,7 @@ R Don't know//Refused; r(633:634,99); nor
 R ; null
 R Mean; a(633:634),r(633:634,01:10); fdp 1 freq novp
 
-TABLE 184
+TABLE 173
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /BX. Ensure the CBC provides more local content
 T &wt QCUL1BX
@@ -3477,7 +3313,7 @@ R Don't know//Refused; r(635:636,99); nor
 R ; null
 R Mean; a(635:636),r(635:636,01:10); fdp 1 freq novp
 
-TABLE 185
+TABLE 174
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /BY. Ensure the CBC provides more content about indigenous Canadians
 T &wt QCUL1BY
@@ -3499,7 +3335,7 @@ R Don't know//Refused; r(637:638,99); nor
 R ; null
 R Mean; a(637:638),r(637:638,01:10); fdp 1 freq novp
 
-TABLE 186
+TABLE 175
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /CX. Keep Canadian content free or inexpensive
 T &wt QCUL1CX
@@ -3521,7 +3357,7 @@ R Don't know//Refused; r(639:640,99); nor
 R ; null
 R Mean; a(639:640),r(639:640,01:10); fdp 1 freq novp
 
-TABLE 187
+TABLE 176
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /CY. Give Canadians more choice in the types of content available to them
 T &wt QCUL1CY
@@ -3543,7 +3379,7 @@ R Don't know//Refused; r(641:642,99); nor
 R ; null
 R Mean; a(641:642),r(641:642,01:10); fdp 1 freq novp
 
-TABLE 188
+TABLE 177
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /DX. Ensure Canadian content creators can compete with big international companies
 T &wt QCUL1DX
@@ -3565,7 +3401,7 @@ R Don't know//Refused; r(643:644,99); nor
 R ; null
 R Mean; a(643:644),r(643:644,01:10); fdp 1 freq novp
 
-TABLE 189
+TABLE 178
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /DY. Partner with Canadian content creators so they can promote and sell their content internationally
 T &wt QCUL1DY
@@ -3587,7 +3423,7 @@ R Don't know//Refused; r(645:646,99); nor
 R ; null
 R Mean; a(645:646),r(645:646,01:10); fdp 1 freq novp
 
-TABLE 190
+TABLE 179
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /EX. Help content creators take advantage of new digital platforms
 T &wt QCUL1EX
@@ -3609,7 +3445,7 @@ R Don't know//Refused; r(647:648,99); nor
 R ; null
 R Mean; a(647:648),r(647:648,01:10); fdp 1 freq novp
 
-TABLE 191
+TABLE 180
 T CUL1. The culture sector in Canada includes content creators who produce books, TV, film, video games, and music, among other things. When thinking about the culture sector in Canada, how high of a priority, if at all, should each of the following be? Please rate each on a scale of 1 to 10, where 1 means it should not be a priority and 10 means it should be a top priority.
 T /EY. Encourage innovation in the culture sector
 T &wt QCUL1EY
@@ -3631,7 +3467,7 @@ R Don't know//Refused; r(649:650,99); nor
 R ; null
 R Mean; a(649:650),r(649:650,01:10); fdp 1 freq novp
 
-TABLE 192
+TABLE 181
 T CUL1 Summary of 7 - 10 scores
 T &wt QCUL1_SUMMARY
 O rankvpct
@@ -3660,7 +3496,7 @@ R EY. Encourage innovation in the culture sector;															r(649:650,07:10)
 
 
 
-TABLE 193
+TABLE 182
 T Persons with disabilities include those who have long-term physical, mental, intellectual or sensory impairments. This may hinder their full and effective participation in society on an equal basis with others. DISAB1 Are you a person with a disability?
 T &wt DISAB1
 Q 777-1:9
@@ -3668,7 +3504,7 @@ R Yes; 777-1
 R No; 777-2 
 R DON'T KNOW//REFUSED; 777-9 
 
-TABLE 194
+TABLE 183
 T DISAB2 Do you personally know at least one person with a disability?
 T &wt DISAB2
 Q 778-1:9
@@ -3676,7 +3512,7 @@ R Yes; 778-1
 R No; 778-2 
 R DON'T KNOW//REFUSED; 778-9 
 
-TABLE 195
+TABLE 184
 T DISAB3. For each of the following, do you know at least one person with a disability that matches this description?
 T &wt DISAB3
 Q r(779:779/780:780/781:781,1:9)
@@ -3690,7 +3526,7 @@ r DK//REF; r(779:779/780:780/781:781,9)
 
 
 
-TABLE 196
+TABLE 185
 T &wt QDEV1
 T DEV1. What do you believe is the primary cause of poverty in developing countries? [RECORD ONLY ONE MENTION]
 Q r(805:806,01:99)
@@ -3723,7 +3559,7 @@ R Please specify; r(805:806,77)                                       ; nor
 R Don't know // Can't think of anything // Refused; r(805:806,99)     ; nor
 
 
-TABLE 197
+TABLE 186
 T &wt QDEV2A
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T a. Initiatives that promote equality between women and men
@@ -3746,7 +3582,7 @@ R Don't know//Refused; r(807:808,99)
 R ; null
 R Mean; a(807:808),r(807:808,01:10); fdp 1 freq novp
 
-TABLE 198
+TABLE 187
 T &wt QDEV2B
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T b. Initiatives that promote economic growth
@@ -3768,7 +3604,7 @@ R Don't know//Refused; r(809:810,99)
 R ; null
 R Mean; a(809:810),r(809:810,01:10); fdp 1 freq novp
 
-TABLE 199
+TABLE 188
 T &wt QDEV2C
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T c. Initiatives that create jobs
@@ -3790,7 +3626,7 @@ R Don't know//Refused; r(811:812,99)
 R ; null
 R Mean; a(811:812),r(811:812,01:10); fdp 1 freq novp
 
-TABLE 200
+TABLE 189
 T &wt QDEV2D
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T d. Initiatives that address climate change
@@ -3812,7 +3648,7 @@ R Don't know//Refused; r(813:814,99)
 R ; null
 R Mean; a(813:814),r(813:814,01:10); fdp 1 freq novp
 
-TABLE 201
+TABLE 190
 T &wt QDEV2E
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T e. Initiatves that promote peace
@@ -3834,7 +3670,7 @@ R Don't know//Refused; r(815:816,99)
 R ; null
 R Mean; a(815:816),r(815:816,01:10); fdp 1 freq novp
 
-TABLE 202
+TABLE 191
 T &wt QDEV2F
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T f. Initiatives that promote security
@@ -3856,7 +3692,7 @@ R Don't know//Refused; r(817:818,99)
 R ; null
 R Mean; a(817:818),r(817:818,01:10); fdp 1 freq novp
 
-TABLE 203
+TABLE 192
 T &wt QDEV2G
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T g. Initiatives that promote human rights
@@ -3879,7 +3715,7 @@ R Don't know//Refused; r(819:820,99)
 R ; null
 R Mean; a(819:820),r(819:820,01:10); fdp 1 freq novp
 
-TABLE 204
+TABLE 193
 T &wt QDEV2HA
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T h. Greater cooperation with global organizations focused on reducing poverty
@@ -3902,7 +3738,7 @@ R Don't know//Refused; r(821:822,99)
 R ; null
 R Mean; a(821:822),r(821:822,01:10); fdp 1 freq novp
 
-TABLE 205
+TABLE 194
 T &wt QDEV2HB
 T DEV2. When thinking about approaches to reducing poverty in developing countries, how effective or ineffective do you think each of the following initiatives are? Please rate each on a scale of 1 to 10, where 1 is very ineffective in reducing poverty and 10 is very effective in reducing poverty:
 T h. Greater partnerships with global organizations focused on reducing poverty
@@ -3924,7 +3760,7 @@ R Don't know//Refused; r(823:824,99)
 R ; null
 R Mean; a(823:824),r(823:824,01:10); fdp 1 freq novp
 
-TABLE 206
+TABLE 195
 T DEV2 Summary of 7 - 10 scores
 T &wt DEV2_SUMMARY
 O rankvpct
@@ -3948,7 +3784,7 @@ R G. Initiatives that promote human rights; r(819:820,07:10); vbase -1
 R HA. Greater cooperation with global organizations focused on reducing poverty; r(821:822,07:10); vbase -1
 R HB. Greater partnerships with global organizations focused on reducing poverty; r(823:824,07:10); vbase -1
 
-TABLE 207
+TABLE 196
 T &wt QAH3
 T AH3. If the Government of Canada were to make new investments in housing construction and repair, do you believe they should:
 Q 825-1:9
@@ -3956,7 +3792,7 @@ R Transfer this new funding to provincial and territorial governments who would 
 R Select projects to fund, and work directly with municipalities and housing providers; 825-2
 R DK // Refused; 825-9
 
-TABLE 208
+TABLE 197
 T &wt QAH4
 T AH4. Do you support or oppose the Government of Canada providing housing affordability subsidies to low-income individuals to help them pay their rent? Do you strongly or somewhat (support//oppose)?
 Q 826-1:9
@@ -3968,7 +3804,7 @@ R Somewhat support; 826-3
 R Strongly support; 826-4
 R DK//REF; 826-9
 
-TABLE 209
+TABLE 198
 T &wt QAH5
 T AH5. If the Government of Canada were to provide housing affordability subsidies for low-income individuals:
 Q 827-1:9
@@ -3976,7 +3812,7 @@ R should the rent subsidies be provided directly to the individual; 827-1
 R should the rent subsidies be provided to the housing provider; 827-2
 R DK // Refused; 827-9
 
-TABLE 210
+TABLE 199
 T &wt QAH6A
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T A. Seniors
@@ -3998,7 +3834,7 @@ R Don't know//Refused; r(828:829,99)
 R ; null
 R Mean; a(828:829),r(828:829,01:10); fdp 1 freq novp
 
-TABLE 211
+TABLE 200
 T &wt QAH6B
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T B. Veterans
@@ -4020,7 +3856,7 @@ R Don't know//Refused; r(830:831,99)
 R ; null
 R Mean; a(830:831),r(830:831,01:10); fdp 1 freq novp
 
-TABLE 212
+TABLE 201
 T &wt QAH6C
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T C. Indigenous peoples
@@ -4042,7 +3878,7 @@ R Don't know//Refused; r(832:833,99)
 R ; null
 R Mean; a(832:833),r(832:833,01:10); fdp 1 freq novp
 
-TABLE 213
+TABLE 202
 T &wt QAH6D
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T D. Women fleeing domestic violence
@@ -4064,7 +3900,7 @@ R Don't know//Refused; r(834:835,99)
 R ; null
 R Mean; a(834:835),r(834:835,01:10); fdp 1 freq novp
 
-TABLE 214
+TABLE 203
 T &wt QAH6EA
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T E. Persons with developmental disabilities
@@ -4086,7 +3922,7 @@ R Don't know//Refused; r(836:837,99)
 R ; null
 R Mean; a(836:837),r(836:837,01:10); fdp 1 freq novp
 
-TABLE 215
+TABLE 204
 T &wt QAH6EB
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T E. Persons with physical disabilities
@@ -4108,7 +3944,7 @@ R Don't know//Refused; r(838:839,99)
 R ; null
 R Mean; a(838:839),r(838:839,01:10); fdp 1 freq novp
 
-TABLE 216
+TABLE 205
 T &wt QAH6F
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T F. Persons dealing with mental health issues
@@ -4130,7 +3966,7 @@ R Don't know//Refused; r(840:841,99)
 R ; null
 R Mean; a(840:841),r(840:841,01:10); fdp 1 freq novp
 
-TABLE 217
+TABLE 206
 T &wt QAH6G
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T G. Persons dealing with addiction
@@ -4152,7 +3988,7 @@ R Don't know//Refused; r(842:843,99)
 R ; null
 R Mean; a(842:843),r(842:843,01:10); fdp 1 freq novp
 
-TABLE 218
+TABLE 207
 T &wt QAH6H
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T H. Immigrants
@@ -4174,7 +4010,7 @@ R Don't know//Refused; r(844:845,99)
 R ; null
 R Mean; a(844:845),r(844:845,01:10); fdp 1 freq novp
 
-TABLE 219
+TABLE 208
 T &wt QAH6I
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T I. Homeless people
@@ -4196,7 +4032,7 @@ R Don't know//Refused; r(846:847,99)
 R ; null
 R Mean; a(846:847),r(846:847,01:10); fdp 1 freq novp
 
-TABLE 220
+TABLE 209
 T &wt QAH6J
 T AH6. How much of a priority is it to increase housing affordability to the following populations? Please use a scale of 1 to 10, where 1 means it is not a priority at all and 10 means it is a top priority?
 T J. Young families trying to buy their first home
@@ -4220,7 +4056,7 @@ R Mean; a(848:849),r(848:849,01:10); fdp 1 freq novp
 
 
 
-TABLE 221
+TABLE 210
 T AH6 Summary of 7 - 10 scores
 T &wt AH6_SUMMARY
 O rankvpct
@@ -4248,7 +4084,7 @@ R null; r(846:847,01:99) ; noprint
 R J. Young families trying to buy their first home; r(848:849,07:10); vbase +1
 R null; r(848:849,01:99) ; noprint
 
-TABLE 222
+TABLE 211
 T To finish, I'd like to ask you some questions for statistical purposes only. Please be assured that your answers will remain completely confidential. D1. In what year were you born? {b}[RECORD YEAR]{//b}
 T &wt D1
 R 18 to 24;  r(407:410,1993:1999)
@@ -4259,7 +4095,7 @@ R 55 to 64;  r(407:410,1953:1962)
 R 65 or older;  r(407:410,1900:1952)
 R REFUSED; r(407:410,9999)
 
-TABLE 223
+TABLE 212
 T D2. Which of the following age categories do you fall into? {b}[READ LIST, ACCEPT ONE RESPONSE]{//b}
 T &wt D2
 Q r(407:410,9999)
@@ -4271,7 +4107,7 @@ R 55 to 64; r(411:412,05)
 R 65 or older; r(411:412,06)
 R Refused; r(411:412,99); nor
 
-TABLE 224
+TABLE 213
 T D3. What is the highest level of formal education that you have completed to date? {b}[READ LIST, ACCEPT ONE RESPONSE]{//b}
 T &wt D3
 R Grade 8 or less; r(413:414,01)
@@ -4284,7 +4120,7 @@ R Bachelor's degree; r(413:414,07)
 R Post graduate degree above bachelor's level; r(413:414,08)
 R REFUSED; r(413:414,99); nor
 
-TABLE 225
+TABLE 214
 T D4. Which of the following categories best describes your current employment status? {b}[READ LIST, ACCEPT ONE RESPONSE]{//b}
 T &wt D4
 R Working full-time, that is,35 or more hours per week; r(415:416,01)
@@ -4297,7 +4133,7 @@ R Not in the workforce [FULL-TIME HOMEMAKER, UNEMPLOYED, NOT LOOKING FOR WORK]; 
 R {b}[DO NOT READ]{//b} Other - {//b}[DO NOT SPECIFY]{//b}; r(415:416,08)
 R Refused; r(415:416,09)
 
-TABLE 226
+TABLE 215
 T D5. Which of the following categories best describes your total household income? That is, the total income of all persons in your household combined, before taxes {b}[READ LIST]{//b}?
 T &wt D5
 R Under $20,000; 417-1
@@ -4309,14 +4145,14 @@ R $100,000 to just under $150,000; 417-6
 R $150,000 and above; 417-7
 R Refused; 417-9
 
-TABLE 227
+TABLE 216
 T D6. Do you have any children of any age living in your household?
 T &wt D6
 R Yes; 418-1
 R No; 418-2
 R Refused; 418-9
 
-TABLE 228
+TABLE 217
 T D7. Do you have any children in the following age groups living in your household [READ LIST]?
 T /A. Under 6 years old
 T &wt D7A
@@ -4325,7 +4161,7 @@ R Yes; 419-1
 R No; 419-2
 R Refused; 419-9
 
-TABLE 229
+TABLE 218
 T D7. Do you have any children in the following age groups living in your household [READ LIST]?
 T /B. 6 to 11 years old
 T &wt D7B
@@ -4334,7 +4170,7 @@ R Yes; 420-1
 R No; 420-2
 R Refused; 420-9
 
-TABLE 230
+TABLE 219
 T D7. Do you have any children in the following age groups living in your household [READ LIST]?
 T /C. 12 to 17 years old
 T &wt D7C
@@ -4343,7 +4179,7 @@ R Yes; 421-1
 R No; 421-2
 R Refused; 421-9
 
-TABLE 231
+TABLE 220
 T D7. Do you have any children in the following age groups living in your household [READ LIST]?
 T /D. 18 years old or older
 T &wt D7D
@@ -4352,14 +4188,14 @@ R Yes; 422-1
 R No; 422-2
 R Refused; 422-9
 
-TABLE 232
+TABLE 221
 T D8. Were you born in Canada?
 T &wt D8
 R Yes; 423-1
 R No; 423-2
 R Refused; 423-9
 
-TABLE 233
+TABLE 222
 T D9. In what year did you come to Canada? {b}RECORD YEAR (ASK FOR APPROXIMATION IF THEY CAN'T REMEMBER){//b}
 T &wt D9
 Q 423-2
@@ -4371,7 +4207,7 @@ R 1970s; r(424:427,1970:1979)
 R 1960s and earlier; r(424:427,1900:1969)
 R REFUSED; r(424:427,9999)
 
-TABLE 234
+TABLE 223
 T D10. Which of the following best describes the area where you currently live? (READ)
 T &wt D10
 Q 595-1:9
@@ -4381,14 +4217,14 @@ R A town or village; 595-3
 R A rural area; 595-4 
 R Don't Know // Refused; 595-9 
 
-TABLE 235
+TABLE 224
 T D12. Are you an Aboriginal person, that is, First Nations, Metis or Inuk (Inuit)? First Nations includes Status and Non-Status Indians.
 T &wt D12
 R Yes; 428-1
 R No; 428-2
 R Refused; 428-9
 
-TABLE 236
+TABLE 225
 T D13. You may belong to one or more racial or cultural groups on the following list. Are you...? Interviewer: Read categories to respondent and mark up to 4 responses that apply. If respondent answers "mixed", "bi-racial" or "multi-racial", etc., probe &
 for specific groups and mark each one separately (e.g., White, Black, Chinese).
 T &wt D13
@@ -4414,7 +4250,7 @@ R Other - Specify; r(429:430/431:432...435:436,50); nor
 R Other; r(429:430/431:432...435:436,88); nor
 R DK//RF; r(429:430/431:432...435:436,99); nor
 
-TABLE 237
+TABLE 226
 T GENDER
 T &wt GENDER
 R Male; 297-1
@@ -4454,7 +4290,7 @@ X load add char from 'Y:\D126\D126_daily.TXT'
 
 X ex 805
 X ex 901
-*
+
 
 
 TABLE 805
@@ -4462,23 +4298,23 @@ T weight execute - AgeGender and Region (from daily)
 X set qual (1'D126')
 X cw(f901:915)
 X set qual off
-*
+
 
 
 TABLE 901
 X set qual (1'D123' OR 1'D124' OR 1'D125' OR 1'D126')
-X run 1 thru 237 b1001 PCTS pdp 0 excel(name'D126 - PCO Week 26' sheet'&r' ini)
-X ;run 1 thru 237 b1001 PCTS pdp 0 excel(name'D126 - PCO Week 26 - counts' sheet'&r'ini) novp nosgtest nottest
-X ;run 1 thru 237 b1001 PCTS pdp 0 excel(name'D126 - PCO Week 26 - percents' sheet'&r' ini) nofreq nosgtest nottest
+X  run 1 thru 226 b1001 PCTS pdp 0 excel(name'D126 - PCO Week 26' sheet'&r' ini)
+X ;run 1 thru 226 b1001 PCTS pdp 0 excel(name'D126 - PCO Week 26 - counts' sheet'&r'ini) novp nosgtest nottest
+X ;run 1 thru 226 b1001 PCTS pdp 0 excel(name'D126 - PCO Week 26 - percents' sheet'&r' ini) nofreq nosgtest nottest
 
 
 TABLE 902
 X set qual (1'D114' OR 1'D115' OR 1'D116' OR 1'D117' OR 1'D118' OR 1'D119' OR 1'D120' OR 1'D121' OR 1'D123' OR 1'D124' OR 1'D125' OR 1'D126')
-X run 1 thru 237 b1001 PCTS pdp 0 excel(name'PCO June-September' sheet'&r' ini)
-X run 1 thru 237 b1001 PCTS pdp 0 excel(name'PCO June-September - counts' sheet'&r'ini) novp nosgtest nottest
-X run 1 thru 237 b1001 PCTS pdp 0 excel(name'PCO June-September - percents' sheet'&r' ini) nofreq nosgtest nottest
+X  run 1 thru 226 b1001 PCTS pdp 0 excel(name'PCO June-September' sheet'&r' ini)
+X  run 1 thru 226 b1001 PCTS pdp 0 excel(name'PCO June-September - counts' sheet'&r'ini) novp nosgtest nottest
+X  run 1 thru 226 b1001 PCTS pdp 0 excel(name'PCO June-September - percents' sheet'&r' ini) nofreq nosgtest nottest
 
-*
+
 TABLE 1001
 R Total; all; novp nor space 1 freq
 C Total; all

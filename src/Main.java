@@ -15,7 +15,7 @@ public class Main {
 		System.out.println("START");
 		String ascFilePath = "D126.ASC";
 		String enterFilePath = "D126_CUMULATIVE.e";
-		//String enterFilePath = "D1132.e";
+		String enterFileOutput = "Q02F_test.e";
 		
 		File ascFile = new File(ascFilePath);
 		Map<String, Variable> variableMap = Controller.parseASCFile(ascFile);
@@ -46,6 +46,8 @@ public class Main {
 				}
 				buffer.add(table);
 			}
+			if(line.equals("*##"))
+				break;
 		}
 		
 		for (ArrayList<String> table : buffer) {
@@ -101,18 +103,19 @@ public class Main {
 				table.set(indexOfShortLabel, "T " + var.shortLabelFrench);
 			}
 			
-			
-			Map<String, String> choiceLabels = getChoices(table, var.codeWidth);
-			choiceLabels.forEach((code, label) -> {
-				//System.out.println(code);
+			Map<Integer, String> indexesOfChoices = getIndexesOfChoicesInTable(table, var.codeWidth);
+			for (Integer index : indexesOfChoices.keySet()) {
+				String code = indexesOfChoices.get(index);
+				
 				boolean codePresent = var.choicesFrench.containsKey(code);
 				if(!codePresent){
 					System.err.println("Code " + code + " not found in variable " + var.variableName);
+					continue;
 				}
-			});
-			
-			//break;
-			//System.out.println(sheetName);
+				@NotNull String frenchChoiceLabel = var.choicesFrench.get(code);
+				
+				table.set(index, getFrenchChoiceRow(table, index, frenchChoiceLabel));
+			}
 		}
 		
 		StringBuilder sb = new StringBuilder();
@@ -123,9 +126,7 @@ public class Main {
 			sb.append('\n');
 		}
 		
-		int extIndex = enterFilePath.lastIndexOf('.');
-		String frenchEnterFilePath = enterFilePath.substring(0, extIndex) + "fr.e";
-		Writer.writeEFile(frenchEnterFilePath, sb);
+		Writer.writeEFile(enterFileOutput, sb);
 		
 		System.out.println("END");
 	}
@@ -147,9 +148,10 @@ public class Main {
 		return null;
 	}
 	
+	//TODO: make pure, don't modify the table parameter
 	private static void setLongLabel(ArrayList<String> table, int startIndexOfLongLabel, int longLabelLinesLength, String newTitlesString) {
 		for (int i = 0; i < longLabelLinesLength; i++) {
-			table.remove(startIndexOfLongLabel + i);
+			table.remove(startIndexOfLongLabel);
 		}
 		
 		ArrayList<String> newTitlesList = new ArrayList<>();
@@ -169,6 +171,27 @@ public class Main {
 	}
 	
 	/**
+	 * Given a ArrayList of Strings, that contain choices with codes,
+	 * returns a map of indexes -> codes
+	 * the index key is the index of that row in the input table
+	 * @param table the table containing the rows
+	 * @param codeWidth the codeWidth of the Question
+	 * @return a hashMap of indexes mapping to the choice codes
+	 */
+	@Contract(pure = true)
+	private static Map<Integer, String> getIndexesOfChoicesInTable(@NotNull ArrayList<String> table, int codeWidth) {
+		Map<Integer, String> choices = new HashMap<>();
+		for (int i = 0; i < table.size(); i++) {
+			String line = table.get(i);
+			int codeStartIndex = (codeWidth > 1 ? line.lastIndexOf(',') : line.indexOf('-', line.indexOf(';'))) + 1;
+			if(line.startsWith("R ") && !line.startsWith("R NET") && !line.endsWith("null") && !line.startsWith("R Mean; a(")){
+				choices.put(i, line.substring(codeStartIndex, codeStartIndex + codeWidth));
+			}
+		}
+		return choices;
+	}
+	
+	/**
 	 * Given a ArrayList of Strings, that contain choice labels with codes,
 	 * returns a map of codes -> choiceLabels
 	 * @param table the table containing the rows
@@ -177,15 +200,14 @@ public class Main {
 	 */
 	@Contract(pure = true)
 	private static Map<String, String> getChoices(@NotNull ArrayList<String> table, int codeWidth) {
-		ArrayList<String> rawRows = filter(table, s -> s.startsWith("R ") && !s.startsWith("R NET"));
+		ArrayList<String> rawRows = filter(table, s -> s.startsWith("R ") && !s.startsWith("R NET") && !s.endsWith("null") && !s.startsWith("R Mean; a("));
 		Map<String, String> choices = new HashMap<>();
 		
 		rawRows.forEach(row -> {
 			int labelEndIndex = row.indexOf(';');
 			String choiceLabel = row.substring(2, labelEndIndex);
 			String choiceCode;
-			int codeStartIndex;
-			codeStartIndex = (codeWidth > 1 ? row.lastIndexOf(',') : row.indexOf('-', labelEndIndex)) + 1;
+			int codeStartIndex = (codeWidth > 1 ? row.lastIndexOf(',') : row.indexOf('-', labelEndIndex)) + 1;
 			choiceCode = row.substring(codeStartIndex, codeStartIndex + codeWidth);
 			
 			choices.put(choiceCode, choiceLabel);
@@ -194,11 +216,9 @@ public class Main {
 		return choices;
 	}
 	
-	private static ArrayList<String> getChoiceLabels(ArrayList<String> table) {
-		ArrayList<String> rawRows = filter(table, s -> s.startsWith("R ") && !s.startsWith("R NET") && !s.startsWith("R Mean"));
-		ArrayList<String> choiceLabels = new ArrayList<>();
-		rawRows.forEach(rr -> choiceLabels.add(rr.substring(2, rr.indexOf(';'))));
-		choiceLabels.removeIf(String::isEmpty);
-		return choiceLabels;
+	private static String getFrenchChoiceRow(ArrayList<String> table, Integer index, String frenchChoiceLabel) {
+		String row = table.get(index);
+		int labelEndIndex = row.indexOf(';');
+		return "R " + frenchChoiceLabel + row.substring(labelEndIndex);
 	}
 }
